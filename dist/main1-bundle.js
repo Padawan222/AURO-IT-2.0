@@ -24,7 +24,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../../Documents/polices/strasua.otf */ "../../Documents/polices/strasua.otf"), __webpack_require__.b);
 var ___CSS_LOADER_URL_IMPORT_1___ = new URL(/* asset import */ __webpack_require__(/*! ../../Documents/polices/Raleway-Black.ttf */ "../../Documents/polices/Raleway-Black.ttf"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_2___ = new URL(/* asset import */ __webpack_require__(/*! ../images/img-header.jpg */ "./src/assets/images/img-header.jpg"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_2___ = new URL(/* asset import */ __webpack_require__(/*! ./1-img-header.jpeg */ "./src/assets/styles/1-img-header.jpeg"), __webpack_require__.b);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 var ___CSS_LOADER_URL_REPLACEMENT_1___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_1___);
@@ -76,20 +76,12 @@ body {
   src: url(${___CSS_LOADER_URL_REPLACEMENT_1___}) format(opentype);
 }
 header {
-  background-image: url(${___CSS_LOADER_URL_REPLACEMENT_2___});
+  background: url(${___CSS_LOADER_URL_REPLACEMENT_2___});
   background-size: cover;
   background-position: center;
-  height: 300px;
-}
-
-.logo {
-  display: none;
-  height: 10rem;
-}
-
-.img-logo {
-  height: 10rem;
-}`, "",{"version":3,"sources":["webpack://./src/assets/styles/_base.scss","webpack://./src/assets/styles/style.scss","webpack://./src/assets/styles/_media-queries.scss","webpack://./src/assets/styles/_reset.scss","webpack://./src/assets/styles/_variables.scss","webpack://./src/assets/styles/_fonts.scss","webpack://./src/assets/styles/_header.scss"],"names":[],"mappings":"AAAA;EACE,gBAAA;ACCF;;ADCA;EACE,+BAAA;EACA,kBAAA;EACA,iBAAA;EACA,WAAA;ACEF;;ACTA,8BAAA;AAMA,uCAAA;AAMA,6CAAA;AAMA,kBAAA;AClBA;EACE,SAAA;EACA,UAAA;EACA,sBAAA;AFgBF;;AGnBA;EAEE,gCAAA;EACA,iDAAA;EACA,wCAAA;EAGA,YAAA;EACA,iBAAA;EACA,iBAAA;EACA,eAAA;EACA,iBAAA;EACA,eAAA;EACA,gBAAA;EACA,gBAAA;EAGA;wCAAA;AHkBF;;AInCA;EACE,sBAAA;EACA,6DAAA;AJsCF;AInCA;EACE,sBAAA;EACA,6DAAA;AJqCF;AK5CA;EACE,yDAAA;EACA,sBAAA;EACA,2BAAA;EACA,aAAA;AL8CF;;AK3CA;EACE,aAAA;EACA,aAAA;AL8CF;;AK5CA;EACE,aAAA;AL+CF","sourcesContent":["html {\n  font-size: 62.5%;\n}\nbody {\n  font-family: var(--font-family);\n  color: var(--text);\n  font-size: 1.6rem;\n  width: 100%;\n}\n","html {\n  font-size: 62.5%;\n}\n\nbody {\n  font-family: var(--font-family);\n  color: var(--text);\n  font-size: 1.6rem;\n  width: 100%;\n}\n\n/* Landscape phones and down */\n/* Landscape phone to portrait tablet */\n/* Portrait tablet to landscape and desktop */\n/* Large desktop */\n* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\n:root {\n  --font-family-strasua: \"strasua\";\n  --font-family-title: \"Cinzel Decorative\", cursive;\n  --font-family: \"Nunito Sans\", sans-serif;\n  --text: #333;\n  --yellow: #efb800;\n  --orange: #eb5d0b;\n  --pink: #df427e;\n  --purple: #803d8f;\n  --blue: #009dd7;\n  --green: #7cba34;\n  --black: #000000;\n  --box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),\n    0 1px 3px 1px rgba(60, 64, 67, 0.15);\n}\n\n@font-face {\n  font-family: \"strasua\";\n  src: url(\"C:/Users/Azstras/OneDrive/Documents/polices/strasua.otf\") format(opentype);\n}\n@font-face {\n  font-family: \"raleway\";\n  src: url(\"C:/Users/Azstras/OneDrive/Documents/polices/Raleway-Black.ttf\") format(opentype);\n}\nheader {\n  background-image: url(\"../images/img-header.jpg\");\n  background-size: cover;\n  background-position: center;\n  height: 300px;\n}\n\n.logo {\n  display: none;\n  height: 10rem;\n}\n\n.img-logo {\n  height: 10rem;\n}","/* Landscape phones and down */\r\n@mixin xs {\r\n  @media (max-width: 480px) {\r\n    @content;\r\n  }\r\n}\r\n/* Landscape phone to portrait tablet */\r\n@mixin sm {\r\n  @media (min-width: 480px) and (max-width: 909px) {\r\n    @content;\r\n  }\r\n}\r\n/* Portrait tablet to landscape and desktop */\r\n@mixin md {\r\n  @media (min-width: 910px) and (max-width: 1400px) {\r\n    @content;\r\n  }\r\n}\r\n/* Large desktop */\r\n@mixin xl {\r\n  @media (min-width: 1200px) and (max-width: 2559px) {\r\n    @content;\r\n  }\r\n}\r\n@mixin xxl {\r\n  @media (min-width: 2559px) {\r\n    @content;\r\n  }\r\n}\r\n","* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n",":root {\r\n  // font-family\r\n  --font-family-strasua: \"strasua\";\r\n  --font-family-title: \"Cinzel Decorative\", cursive;\r\n  --font-family: \"Nunito Sans\", sans-serif;\r\n\r\n  // color\r\n  --text: #333;\r\n  --yellow: #efb800;\r\n  --orange: #eb5d0b;\r\n  --pink: #df427e;\r\n  --purple: #803d8f;\r\n  --blue: #009dd7;\r\n  --green: #7cba34;\r\n  --black: #000000;\r\n\r\n  // box-shadow\r\n  --box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),\r\n    0 1px 3px 1px rgba(60, 64, 67, 0.15);\r\n}\r\n","@font-face {\r\n  font-family: \"strasua\";\r\n  src: url(\"C:/Users/Azstras/OneDrive/Documents/polices/strasua.otf\")\r\n    format(opentype);\r\n}\r\n@font-face {\r\n  font-family: \"raleway\";\r\n  src: url(\"C:/Users/Azstras/OneDrive/Documents/polices/Raleway-Black.ttf\")\r\n    format(opentype);\r\n}\r\n","header {\r\n  background-image: url(\"../images/img-header.jpg\");\r\n  background-size: cover;\r\n  background-position: center;\r\n  height: 300px;\r\n}\r\n\r\n.logo {\r\n  display: none;\r\n  height: 10rem;\r\n}\r\n.img-logo {\r\n  height: 10rem;\r\n}\r\n"],"sourceRoot":""}]);
+  background-repeat: no-repeat;
+  height: 60rem;
+}`, "",{"version":3,"sources":["webpack://./src/assets/styles/_base.scss","webpack://./src/assets/styles/style.scss","webpack://./src/assets/styles/_media-queries.scss","webpack://./src/assets/styles/_reset.scss","webpack://./src/assets/styles/_variables.scss","webpack://./src/assets/styles/_fonts.scss","webpack://./src/assets/styles/_header.scss"],"names":[],"mappings":"AAAA;EACE,gBAAA;ACCF;;ADCA;EACE,+BAAA;EACA,kBAAA;EACA,iBAAA;EACA,WAAA;ACEF;;ACTA,8BAAA;AAMA,uCAAA;AAMA,6CAAA;AAMA,kBAAA;AClBA;EACE,SAAA;EACA,UAAA;EACA,sBAAA;AFgBF;;AGnBA;EAEE,gCAAA;EACA,iDAAA;EACA,wCAAA;EAGA,YAAA;EACA,iBAAA;EACA,iBAAA;EACA,eAAA;EACA,iBAAA;EACA,eAAA;EACA,gBAAA;EACA,gBAAA;EAGA;wCAAA;AHkBF;;AInCA;EACE,sBAAA;EACA,6DAAA;AJsCF;AInCA;EACE,sBAAA;EACA,6DAAA;AJqCF;AK5CA;EACE,mDAAA;EACA,sBAAA;EACA,2BAAA;EACA,4BAAA;EACA,aAAA;AL8CF","sourcesContent":["html {\n  font-size: 62.5%;\n}\nbody {\n  font-family: var(--font-family);\n  color: var(--text);\n  font-size: 1.6rem;\n  width: 100%;\n}\n","html {\n  font-size: 62.5%;\n}\n\nbody {\n  font-family: var(--font-family);\n  color: var(--text);\n  font-size: 1.6rem;\n  width: 100%;\n}\n\n/* Landscape phones and down */\n/* Landscape phone to portrait tablet */\n/* Portrait tablet to landscape and desktop */\n/* Large desktop */\n* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\n:root {\n  --font-family-strasua: \"strasua\";\n  --font-family-title: \"Cinzel Decorative\", cursive;\n  --font-family: \"Nunito Sans\", sans-serif;\n  --text: #333;\n  --yellow: #efb800;\n  --orange: #eb5d0b;\n  --pink: #df427e;\n  --purple: #803d8f;\n  --blue: #009dd7;\n  --green: #7cba34;\n  --black: #000000;\n  --box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),\n    0 1px 3px 1px rgba(60, 64, 67, 0.15);\n}\n\n@font-face {\n  font-family: \"strasua\";\n  src: url(\"C:/Users/Azstras/OneDrive/Documents/polices/strasua.otf\") format(opentype);\n}\n@font-face {\n  font-family: \"raleway\";\n  src: url(\"C:/Users/Azstras/OneDrive/Documents/polices/Raleway-Black.ttf\") format(opentype);\n}\nheader {\n  background: url(./1-img-header.jpeg);\n  background-size: cover;\n  background-position: center;\n  background-repeat: no-repeat;\n  height: 60rem;\n}","/* Landscape phones and down */\r\n@mixin xs {\r\n  @media (max-width: 480px) {\r\n    @content;\r\n  }\r\n}\r\n/* Landscape phone to portrait tablet */\r\n@mixin sm {\r\n  @media (min-width: 480px) and (max-width: 909px) {\r\n    @content;\r\n  }\r\n}\r\n/* Portrait tablet to landscape and desktop */\r\n@mixin md {\r\n  @media (min-width: 910px) and (max-width: 1400px) {\r\n    @content;\r\n  }\r\n}\r\n/* Large desktop */\r\n@mixin xl {\r\n  @media (min-width: 1200px) and (max-width: 2559px) {\r\n    @content;\r\n  }\r\n}\r\n@mixin xxl {\r\n  @media (min-width: 2559px) {\r\n    @content;\r\n  }\r\n}\r\n","* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n",":root {\r\n  // font-family\r\n  --font-family-strasua: \"strasua\";\r\n  --font-family-title: \"Cinzel Decorative\", cursive;\r\n  --font-family: \"Nunito Sans\", sans-serif;\r\n\r\n  // color\r\n  --text: #333;\r\n  --yellow: #efb800;\r\n  --orange: #eb5d0b;\r\n  --pink: #df427e;\r\n  --purple: #803d8f;\r\n  --blue: #009dd7;\r\n  --green: #7cba34;\r\n  --black: #000000;\r\n\r\n  // box-shadow\r\n  --box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),\r\n    0 1px 3px 1px rgba(60, 64, 67, 0.15);\r\n}\r\n","@font-face {\r\n  font-family: \"strasua\";\r\n  src: url(\"C:/Users/Azstras/OneDrive/Documents/polices/strasua.otf\")\r\n    format(opentype);\r\n}\r\n@font-face {\r\n  font-family: \"raleway\";\r\n  src: url(\"C:/Users/Azstras/OneDrive/Documents/polices/Raleway-Black.ttf\")\r\n    format(opentype);\r\n}\r\n","header {\r\n  background: url(./1-img-header.jpeg);\r\n  background-size: cover;\r\n  background-position: center;\r\n  background-repeat: no-repeat;\r\n  height: 60rem;\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -647,13 +639,13 @@ module.exports = styleTagTransform;
 
 /***/ }),
 
-/***/ "./src/assets/images/img-header.jpg":
-/*!******************************************!*\
-  !*** ./src/assets/images/img-header.jpg ***!
-  \******************************************/
+/***/ "./src/assets/styles/1-img-header.jpeg":
+/*!*********************************************!*\
+  !*** ./src/assets/styles/1-img-header.jpeg ***!
+  \*********************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__.p + "bbc5a052fe96639fa61d.jpg";
+module.exports = __webpack_require__.p + "40af2f0dbabccdb22af9.jpeg";
 
 /***/ }),
 
