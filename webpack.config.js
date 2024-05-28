@@ -125,6 +125,7 @@ module.exports = {
         use: [
           {
             loader: "file-loader",
+            loader: "url-loader",
           },
         ],
       },
@@ -280,7 +281,7 @@ module.exports = {
       patterns: [
         {
           from: "./src/assets/images/*",
-          to: "src/assets/images/[name][ext]",
+          to: "assets/images/[name][ext]",
         },
       ],
     }),
