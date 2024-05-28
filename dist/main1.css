@@ -1,0 +1,125 @@
+/*!*********************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js!./src/assets/styles/style.scss ***!
+  \*********************************************************************************************************************************************************************************************/
+@charset "UTF-8";
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--text);
+  font-size: 1.6rem;
+  width: 100%;
+}
+
+/* Landscape phones and down */
+/* Landscape phone to portrait tablet */
+/* Portrait tablet to landscape and desktop */
+/* Large desktop */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-family-strasua: "strasua";
+  --font-family-title: "Cinzel Decorative", cursive;
+  --font-family: "Raleway", sans-serif;
+  --text: #333;
+  --yellow: #efb800;
+  --orange: #eb5d0b;
+  --pink: #df427e;
+  --purple: #803d8f;
+  --blue: #009dd7;
+  --green: #7cba34;
+  --black: #000000;
+  --box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),
+    0 1px 3px 1px rgba(60, 64, 67, 0.15);
+}
+
+@font-face {
+  font-family: "strasua";
+  src: url(52bda089827a7b6a3336.otf) format(opentype);
+}
+@font-face {
+  font-family: "raleway";
+  src: url(f8326789442b4f02f449.ttf) format(opentype);
+}
+header {
+  grid-area: header;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-container {
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10rem;
+  width: 100%;
+  z-index: 1000;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
+.header-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to right, var(--yellow), var(--orange), var(--purple), var(--blue), var(--green));
+  opacity: 0.5; /* Applique une opacité au dégradé */
+  z-index: -1; /* Place le pseudo-élément derrière le contenu de l'en-tête */
+  display: none; /* Cache le pseudo-élément par défaut */
+}
+
+.header-container.show::before {
+  display: block; /* Montre le pseudo-élément lorsque la classe "show" est ajoutée */
+}
+
+.logo-header {
+  height: 8rem;
+  margin-right: 20rem;
+}
+
+.background-header {
+  z-index: -5;
+}
+.background-header img {
+  height: 60vh;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+}
+
+.link-nav {
+  color: white;
+  font-weight: 300;
+  margin: 2rem;
+  text-decoration: none;
+}
+
+.angle {
+  rotate: 90deg;
+}
+
+.grid {
+  height: 1000rem;
+  display: grid;
+  grid: "header" 60rem/auto;
+  background-image: url(1640424acb0ab9349762.jpg);
+}
+/*!********************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js!./src/index/french/index.scss ***!
+  \********************************************************************************************************************************************************************************************/
+
+
+/*# sourceMappingURL=main1.css.map*/
