@@ -1,7 +1,52 @@
 header {
-  background: url(./1-img-header.jpeg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 60rem;
+  grid-area: header;
+  display: flex;
+  flex-direction: column;
+}
+.header-container {
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10rem;
+  width: 100%;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+}
+
+.header-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+    to right,
+    var(--yellow),
+    var(--orange),
+    var(--purple),
+    var(--blue),
+    var(--green)
+  );
+  opacity: 0.5; /* Applique une opacité au dégradé */
+  z-index: -1; /* Place le pseudo-élément derrière le contenu de l'en-tête */
+  display: none; /* Cache le pseudo-élément par défaut */
+}
+
+.header-container.show::before {
+  display: block; /* Montre le pseudo-élément lorsque la classe "show" est ajoutée */
+}
+
+.logo-header {
+  height: 8rem;
+  margin-right: 20rem;
+}
+.background-header {
+  z-index: -5;
+  img {
+    height: 60vh;
+    width: 100%;
+  }
 }

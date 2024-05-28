@@ -24,13 +24,14 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../../Documents/polices/strasua.otf */ "../../Documents/polices/strasua.otf"), __webpack_require__.b);
 var ___CSS_LOADER_URL_IMPORT_1___ = new URL(/* asset import */ __webpack_require__(/*! ../../Documents/polices/Raleway-Black.ttf */ "../../Documents/polices/Raleway-Black.ttf"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_2___ = new URL(/* asset import */ __webpack_require__(/*! ./1-img-header.jpeg */ "./src/assets/styles/1-img-header.jpeg"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_2___ = new URL(/* asset import */ __webpack_require__(/*! ../images/1-img-header.jpg */ "./src/assets/images/1-img-header.jpg"), __webpack_require__.b);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 var ___CSS_LOADER_URL_REPLACEMENT_1___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_1___);
 var ___CSS_LOADER_URL_REPLACEMENT_2___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_2___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, `html {
+___CSS_LOADER_EXPORT___.push([module.id, `@charset "UTF-8";
+html {
   font-size: 62.5%;
 }
 
@@ -54,7 +55,7 @@ body {
 :root {
   --font-family-strasua: "strasua";
   --font-family-title: "Cinzel Decorative", cursive;
-  --font-family: "Nunito Sans", sans-serif;
+  --font-family: "Raleway", sans-serif;
   --text: #333;
   --yellow: #efb800;
   --orange: #eb5d0b;
@@ -76,12 +77,74 @@ body {
   src: url(${___CSS_LOADER_URL_REPLACEMENT_1___}) format(opentype);
 }
 header {
-  background: url(${___CSS_LOADER_URL_REPLACEMENT_2___});
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 60rem;
-}`, "",{"version":3,"sources":["webpack://./src/assets/styles/_base.scss","webpack://./src/assets/styles/style.scss","webpack://./src/assets/styles/_media-queries.scss","webpack://./src/assets/styles/_reset.scss","webpack://./src/assets/styles/_variables.scss","webpack://./src/assets/styles/_fonts.scss","webpack://./src/assets/styles/_header.scss"],"names":[],"mappings":"AAAA;EACE,gBAAA;ACCF;;ADCA;EACE,+BAAA;EACA,kBAAA;EACA,iBAAA;EACA,WAAA;ACEF;;ACTA,8BAAA;AAMA,uCAAA;AAMA,6CAAA;AAMA,kBAAA;AClBA;EACE,SAAA;EACA,UAAA;EACA,sBAAA;AFgBF;;AGnBA;EAEE,gCAAA;EACA,iDAAA;EACA,wCAAA;EAGA,YAAA;EACA,iBAAA;EACA,iBAAA;EACA,eAAA;EACA,iBAAA;EACA,eAAA;EACA,gBAAA;EACA,gBAAA;EAGA;wCAAA;AHkBF;;AInCA;EACE,sBAAA;EACA,6DAAA;AJsCF;AInCA;EACE,sBAAA;EACA,6DAAA;AJqCF;AK5CA;EACE,mDAAA;EACA,sBAAA;EACA,2BAAA;EACA,4BAAA;EACA,aAAA;AL8CF","sourcesContent":["html {\n  font-size: 62.5%;\n}\nbody {\n  font-family: var(--font-family);\n  color: var(--text);\n  font-size: 1.6rem;\n  width: 100%;\n}\n","html {\n  font-size: 62.5%;\n}\n\nbody {\n  font-family: var(--font-family);\n  color: var(--text);\n  font-size: 1.6rem;\n  width: 100%;\n}\n\n/* Landscape phones and down */\n/* Landscape phone to portrait tablet */\n/* Portrait tablet to landscape and desktop */\n/* Large desktop */\n* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\n:root {\n  --font-family-strasua: \"strasua\";\n  --font-family-title: \"Cinzel Decorative\", cursive;\n  --font-family: \"Nunito Sans\", sans-serif;\n  --text: #333;\n  --yellow: #efb800;\n  --orange: #eb5d0b;\n  --pink: #df427e;\n  --purple: #803d8f;\n  --blue: #009dd7;\n  --green: #7cba34;\n  --black: #000000;\n  --box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),\n    0 1px 3px 1px rgba(60, 64, 67, 0.15);\n}\n\n@font-face {\n  font-family: \"strasua\";\n  src: url(\"C:/Users/Azstras/OneDrive/Documents/polices/strasua.otf\") format(opentype);\n}\n@font-face {\n  font-family: \"raleway\";\n  src: url(\"C:/Users/Azstras/OneDrive/Documents/polices/Raleway-Black.ttf\") format(opentype);\n}\nheader {\n  background: url(./1-img-header.jpeg);\n  background-size: cover;\n  background-position: center;\n  background-repeat: no-repeat;\n  height: 60rem;\n}","/* Landscape phones and down */\r\n@mixin xs {\r\n  @media (max-width: 480px) {\r\n    @content;\r\n  }\r\n}\r\n/* Landscape phone to portrait tablet */\r\n@mixin sm {\r\n  @media (min-width: 480px) and (max-width: 909px) {\r\n    @content;\r\n  }\r\n}\r\n/* Portrait tablet to landscape and desktop */\r\n@mixin md {\r\n  @media (min-width: 910px) and (max-width: 1400px) {\r\n    @content;\r\n  }\r\n}\r\n/* Large desktop */\r\n@mixin xl {\r\n  @media (min-width: 1200px) and (max-width: 2559px) {\r\n    @content;\r\n  }\r\n}\r\n@mixin xxl {\r\n  @media (min-width: 2559px) {\r\n    @content;\r\n  }\r\n}\r\n","* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n",":root {\r\n  // font-family\r\n  --font-family-strasua: \"strasua\";\r\n  --font-family-title: \"Cinzel Decorative\", cursive;\r\n  --font-family: \"Nunito Sans\", sans-serif;\r\n\r\n  // color\r\n  --text: #333;\r\n  --yellow: #efb800;\r\n  --orange: #eb5d0b;\r\n  --pink: #df427e;\r\n  --purple: #803d8f;\r\n  --blue: #009dd7;\r\n  --green: #7cba34;\r\n  --black: #000000;\r\n\r\n  // box-shadow\r\n  --box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),\r\n    0 1px 3px 1px rgba(60, 64, 67, 0.15);\r\n}\r\n","@font-face {\r\n  font-family: \"strasua\";\r\n  src: url(\"C:/Users/Azstras/OneDrive/Documents/polices/strasua.otf\")\r\n    format(opentype);\r\n}\r\n@font-face {\r\n  font-family: \"raleway\";\r\n  src: url(\"C:/Users/Azstras/OneDrive/Documents/polices/Raleway-Black.ttf\")\r\n    format(opentype);\r\n}\r\n","header {\r\n  background: url(./1-img-header.jpeg);\r\n  background-size: cover;\r\n  background-position: center;\r\n  background-repeat: no-repeat;\r\n  height: 60rem;\r\n}\r\n"],"sourceRoot":""}]);
+  grid-area: header;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-container {
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10rem;
+  width: 100%;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+}
+
+.header-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to right, var(--yellow), var(--orange), var(--purple), var(--blue), var(--green));
+  opacity: 0.5; /* Applique une opacité au dégradé */
+  z-index: -1; /* Place le pseudo-élément derrière le contenu de l'en-tête */
+  display: none; /* Cache le pseudo-élément par défaut */
+}
+
+.header-container.show::before {
+  display: block; /* Montre le pseudo-élément lorsque la classe "show" est ajoutée */
+}
+
+.logo-header {
+  height: 8rem;
+  margin-right: 20rem;
+}
+
+.background-header {
+  z-index: -5;
+}
+.background-header img {
+  height: 60vh;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+}
+
+.link-nav {
+  color: white;
+  font-weight: 300;
+  margin: 2rem;
+  text-decoration: none;
+}
+
+.angle {
+  rotate: 90deg;
+}
+
+.grid {
+  height: 1000rem;
+  display: grid;
+  grid: "header" 60rem/auto;
+  background-image: url(${___CSS_LOADER_URL_REPLACEMENT_2___});
+}`, "",{"version":3,"sources":["webpack://./src/assets/styles/style.scss","webpack://./src/assets/styles/_base.scss","webpack://./src/assets/styles/_media-queries.scss","webpack://./src/assets/styles/_reset.scss","webpack://./src/assets/styles/_variables.scss","webpack://./src/assets/styles/_fonts.scss","webpack://./src/assets/styles/_header.scss","webpack://./src/assets/styles/_nav-bar.scss"],"names":[],"mappings":"AAAA,gBAAgB;ACAhB;EACE,gBAAA;ADEF;;ACAA;EACE,+BAAA;EACA,kBAAA;EACA,iBAAA;EACA,WAAA;ADGF;;AEVA,8BAAA;AAMA,uCAAA;AAMA,6CAAA;AAMA,kBAAA;AClBA;EACE,SAAA;EACA,UAAA;EACA,sBAAA;AHiBF;;AIpBA;EAEE,gCAAA;EACA,iDAAA;EACA,oCAAA;EAGA,YAAA;EACA,iBAAA;EACA,iBAAA;EACA,eAAA;EACA,iBAAA;EACA,eAAA;EACA,gBAAA;EACA,gBAAA;EAGA;wCAAA;AJmBF;;AKpCA;EACE,sBAAA;EACA,6DAAA;ALuCF;AKpCA;EACE,sBAAA;EACA,6DAAA;ALsCF;AM7CA;EACE,iBAAA;EACA,aAAA;EACA,sBAAA;AN+CF;;AM7CA;EACE,eAAA;EACA,MAAA;EACA,aAAA;EACA,mBAAA;EACA,uBAAA;EACA,aAAA;EACA,WAAA;EACA,aAAA;EACA,2BAAA;ANgDF;;AM7CA;EACE,WAAA;EACA,kBAAA;EACA,MAAA;EACA,OAAA;EACA,YAAA;EACA,WAAA;EACA,6GAAA;EAQA,YAAA,EAAA,oCAAA;EACA,WAAA,EAAA,6DAAA;EACA,aAAA,EAAA,uCAAA;ANyCF;;AMtCA;EACE,cAAA,EAAA,kEAAA;ANyCF;;AMtCA;EACE,YAAA;EACA,mBAAA;ANyCF;;AMvCA;EACE,WAAA;AN0CF;AMzCE;EACE,YAAA;EACA,WAAA;AN2CJ;;AO5FA;EACE,aAAA;AP+FF;;AO7FA;EACE,YAAA;EACA,gBAAA;EACA,YAAA;EACA,qBAAA;APgGF;;AO9FA;EACE,aAAA;APiGF;;AAhGA;EACE,eAAA;EACA,aAAA;EACA,yBAAA;EACA,yDAAA;AAmGF","sourcesContent":["@use \"base\" as *;\r\n@use \"classes\" as *;\r\n@use \"media-queries\" as *;\r\n@use \"reset\" as *;\r\n@use \"variables\" as *;\r\n@use \"utils\" as *;\r\n@use \"fonts\" as *;\r\n@use \"separator\" as *;\r\n@use \"header\" as *;\r\n@use \"nav-bar\" as *;\r\n\r\n.grid {\r\n  height: 1000rem;\r\n  display: grid;\r\n  grid: \"header\" 60rem / auto;\r\n  background-image: url(../images/1-img-header.jpg);\r\n}\r\n","html {\n  font-size: 62.5%;\n}\nbody {\n  font-family: var(--font-family);\n  color: var(--text);\n  font-size: 1.6rem;\n  width: 100%;\n}\n","/* Landscape phones and down */\r\n@mixin xs {\r\n  @media (max-width: 480px) {\r\n    @content;\r\n  }\r\n}\r\n/* Landscape phone to portrait tablet */\r\n@mixin sm {\r\n  @media (min-width: 480px) and (max-width: 909px) {\r\n    @content;\r\n  }\r\n}\r\n/* Portrait tablet to landscape and desktop */\r\n@mixin md {\r\n  @media (min-width: 910px) and (max-width: 1400px) {\r\n    @content;\r\n  }\r\n}\r\n/* Large desktop */\r\n@mixin xl {\r\n  @media (min-width: 1200px) and (max-width: 2559px) {\r\n    @content;\r\n  }\r\n}\r\n@mixin xxl {\r\n  @media (min-width: 2559px) {\r\n    @content;\r\n  }\r\n}\r\n","* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n",":root {\r\n  // font-family\r\n  --font-family-strasua: \"strasua\";\r\n  --font-family-title: \"Cinzel Decorative\", cursive;\r\n  --font-family: \"Raleway\", sans-serif;\r\n\r\n  // color\r\n  --text: #333;\r\n  --yellow: #efb800;\r\n  --orange: #eb5d0b;\r\n  --pink: #df427e;\r\n  --purple: #803d8f;\r\n  --blue: #009dd7;\r\n  --green: #7cba34;\r\n  --black: #000000;\r\n\r\n  // box-shadow\r\n  --box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),\r\n    0 1px 3px 1px rgba(60, 64, 67, 0.15);\r\n}\r\n","@font-face {\r\n  font-family: \"strasua\";\r\n  src: url(\"C:/Users/Azstras/OneDrive/Documents/polices/strasua.otf\")\r\n    format(opentype);\r\n}\r\n@font-face {\r\n  font-family: \"raleway\";\r\n  src: url(\"C:/Users/Azstras/OneDrive/Documents/polices/Raleway-Black.ttf\")\r\n    format(opentype);\r\n}\r\n","header {\r\n  grid-area: header;\r\n  display: flex;\r\n  flex-direction: column;\r\n}\r\n.header-container {\r\n  position: fixed;\r\n  top: 0;\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n  height: 10rem;\r\n  width: 100%;\r\n  z-index: 1000;\r\n  backdrop-filter: blur(10px);\r\n}\r\n\r\n.header-container::before {\r\n  content: \"\";\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n  height: 100%;\r\n  width: 100%;\r\n  background: linear-gradient(\r\n    to right,\r\n    var(--yellow),\r\n    var(--orange),\r\n    var(--purple),\r\n    var(--blue),\r\n    var(--green)\r\n  );\r\n  opacity: 0.5; /* Applique une opacité au dégradé */\r\n  z-index: -1; /* Place le pseudo-élément derrière le contenu de l'en-tête */\r\n  display: none; /* Cache le pseudo-élément par défaut */\r\n}\r\n\r\n.header-container.show::before {\r\n  display: block; /* Montre le pseudo-élément lorsque la classe \"show\" est ajoutée */\r\n}\r\n\r\n.logo-header {\r\n  height: 8rem;\r\n  margin-right: 20rem;\r\n}\r\n.background-header {\r\n  z-index: -5;\r\n  img {\r\n    height: 60vh;\r\n    width: 100%;\r\n  }\r\n}\r\n","nav {\r\n  display: flex;\r\n}\r\n.link-nav {\r\n  color: white;\r\n  font-weight: 300;\r\n  margin: 2rem;\r\n  text-decoration: none;\r\n}\r\n.angle {\r\n  rotate: 90deg;\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -639,13 +702,13 @@ module.exports = styleTagTransform;
 
 /***/ }),
 
-/***/ "./src/assets/styles/1-img-header.jpeg":
-/*!*********************************************!*\
-  !*** ./src/assets/styles/1-img-header.jpeg ***!
-  \*********************************************/
+/***/ "./src/assets/images/1-img-header.jpg":
+/*!********************************************!*\
+  !*** ./src/assets/images/1-img-header.jpg ***!
+  \********************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__.p + "40af2f0dbabccdb22af9.jpeg";
+module.exports = __webpack_require__.p + "bbc5a052fe96639fa61d.jpg";
 
 /***/ }),
 
@@ -817,6 +880,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.scss */ "./src/index/french/index.scss");
 
 
+// header
+
+var backgroundHeader = document.querySelector(".background-header");
+var headerContainer = document.querySelector(".header-container");
+window.addEventListener("scroll", function () {
+  var _document$documentEle = document.documentElement,
+    scrollTop = _document$documentEle.scrollTop,
+    clientHeight = _document$documentEle.clientHeight;
+  var topElementToTopViewport = backgroundHeader.getBoundingClientRect().top;
+  if (scrollTop > scrollTop + topElementToTopViewport - clientHeight * -0.6) {
+    headerContainer.classList.add("show");
+  } else {
+    headerContainer.classList.remove("show");
+  }
+});
 })();
 
 /******/ })()

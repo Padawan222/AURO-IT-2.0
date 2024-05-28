@@ -280,7 +280,7 @@ module.exports = {
       patterns: [
         {
           from: "./src/assets/images/*",
-          to: "assets/images/[name][ext]",
+          to: "src/assets/images/[name][ext]",
         },
       ],
     }),

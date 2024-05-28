@@ -7,3 +7,11 @@
 @use "fonts" as *;
 @use "separator" as *;
 @use "header" as *;
+@use "nav-bar" as *;
+
+.grid {
+  height: 1000rem;
+  display: grid;
+  grid: "header" 60rem / auto;
+  background-image: url(../images/1-img-header.jpg);
+}
