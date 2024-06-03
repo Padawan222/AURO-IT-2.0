@@ -7,4 +7,12 @@
 @use "fonts" as *;
 @use "separator" as *;
 @use "header" as *;
+@use "header-container" as *;
 @use "nav-bar" as *;
+@use "menu-responsive" as *;
+@use "menu" as *;
+.grid-container {
+  height: 1000rem;
+  display: grid;
+  grid: "header-container" auto / auto;
+}

@@ -25,6 +25,10 @@ module.exports = {
       __dirname,
       "src/index/french/tpe-associations/tpe-associations.js"
     ),
+    main7: path.join(
+      __dirname,
+      "src/index/french/grand-comptes/grand-comptes.js"
+    ),
 
     // catala
 
@@ -48,6 +52,10 @@ module.exports = {
     catala6: path.join(
       __dirname,
       "src/index/catala/cat-tpe-associations/cat-tpe-associations.js"
+    ),
+    catala7: path.join(
+      __dirname,
+      "src/index/catala/cat-grand-comptes/cat-grand-comptes.js"
     ),
 
     // english
@@ -73,7 +81,10 @@ module.exports = {
       __dirname,
       "src/index/english/eng-tpe-associations/eng-tpe-associations.js"
     ),
-
+    english7: path.join(
+      __dirname,
+      "src/index/english/eng-grand-comptes/eng-grand-comptes.js"
+    ),
     // spanish
 
     spanish1: path.join(__dirname, "src/index/spanish/spa-index.js"),
@@ -96,6 +107,10 @@ module.exports = {
     spanish6: path.join(
       __dirname,
       "src/index/spanish/spa-tpe-associations/spa-tpe-associations.js"
+    ),
+    spanish7: path.join(
+      __dirname,
+      "src/index/spanish/spa-grand-comptes/spa-grand-comptes.js"
     ),
   },
   output: {
@@ -156,6 +171,11 @@ module.exports = {
       template: "./src/index/french/tpe-associations/tpe-associations.html",
       chunks: ["main6"],
     }),
+    new HtmlWebpackPlugin({
+      filename: "grand-comptes.html",
+      template: "./src/index/french/grand-comptes/grand-comptes.html",
+      chunks: ["main7"],
+    }),
 
     // catala
 
@@ -192,6 +212,11 @@ module.exports = {
       template:
         "./src/index/catala/cat-tpe-associations/cat-tpe-associations.html",
       chunks: ["catala6"],
+    }),
+    new HtmlWebpackPlugin({
+      filename: "cat-grand-comptes.html",
+      template: "./src/index/catala/cat-grand-comptes/cat-grand-comptes.html",
+      chunks: ["catala7"],
     }),
 
     // english
@@ -230,7 +255,11 @@ module.exports = {
         "./src/index/english/eng-tpe-associations/eng-tpe-associations.html",
       chunks: ["english6"],
     }),
-
+    new HtmlWebpackPlugin({
+      filename: "eng-grand-comptes.html",
+      template: "./src/index/english/eng-grand-comptes/eng-grand-comptes.html",
+      chunks: ["english7"],
+    }),
     // spanish
 
     new HtmlWebpackPlugin({
@@ -266,6 +295,11 @@ module.exports = {
       template:
         "./src/index/spanish/spa-tpe-associations/spa-tpe-associations.html",
       chunks: ["spanish6"],
+    }),
+    new HtmlWebpackPlugin({
+      filename: "spa-grand-comptes.html",
+      template: "./src/index/spanish/spa-grand-comptes/spa-grand-comptes.html",
+      chunks: ["spanish7"],
     }),
 
     new CopyWebpackPlugin({

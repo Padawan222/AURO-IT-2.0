@@ -1,4 +1,24 @@
-body {
-  height: 100vh;
-  background: url(../images/1-img-header.jpg);
+@use "media-queries" as *;
+header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  @include xs {
+    justify-content: space-between;
+  }
+  @include sm {
+    justify-content: space-between;
+  }
+  height: 8rem;
+  width: 100%;
+  background: transparent;
+  backdrop-filter: blur(10px);
+}
+.header-logo {
+  height: 8rem;
+}
+.menu-langue {
+  display: flex;
+  flex-direction: column;
 }
