@@ -118,13 +118,6 @@ btn.addEventListener("click", () => {
     bar3.classList.remove("bar-3-active-2");
     nav.classList.remove("nav-active-1-xs");
     nav.classList.remove("nav-active-2-xs");
-    flecheXs2.classList.remove("angle-active-1");
-    navContainerXs.classList.remove("nav-container-xs-active-1");
-    flecheXs1.classList.remove("angle-active-1");
-    containerMenulangueXs.classList.add("container-menu-langue-xs-active-1");
-    menuVosBesoinsContainerXs.style.display = "none";
-    containerMenulangueXs.style.display = "none";
-
     setTimeout(() => {
       bar1.classList.remove("bar-1-active-1");
       bar2.classList.remove("bar-2-active");
@@ -150,6 +143,9 @@ btn.addEventListener("click", () => {
 // menu vos besoins xs
 
 const menuVosBesoinsXS = document.querySelector(".menu-vos-besoins-xs");
+const menuVosBesoinsContainerXS = document.querySelector(
+  ".menu-vos-besoins-container-xs"
+);
 const navContainerXs = document.querySelector(".nav-container-xs");
 const menuVosBesoinsContainerXs = document.querySelector(
   ".menu-vos-besoins-container-xs"
@@ -160,13 +156,23 @@ menuVosBesoinsXS.addEventListener("click", () => {
   if (flecheXs2.classList.contains("angle-active-1")) {
     flecheXs2.classList.remove("angle-active-1");
     navContainerXs.classList.remove("nav-container-xs-active-1");
+    menuVosBesoinsContainerXS.classList.add(
+      "menu-vos-besoins-container-xs-active-1"
+    );
+    menuVosBesoinsXS.classList.remove("menu-vos-besoins-xs-active-1");
     setTimeout(() => {
       menuVosBesoinsContainerXs.style.display = "none";
+      menuVosBesoinsContainerXS.classList.remove(
+        "menu-vos-besoins-container-xs-active-1"
+      );
     }, 1000);
   } else {
-    flecheXs2.classList.add("angle-active-1");
-    menuVosBesoinsContainerXs.style.display = "flex";
-    navContainerXs.classList.add("nav-container-xs-active-1");
+    menuVosBesoinsXS.classList.add("menu-vos-besoins-xs-active-1");
+    setTimeout(() => {
+      flecheXs2.classList.add("angle-active-1");
+      menuVosBesoinsContainerXs.style.display = "flex";
+      navContainerXs.classList.add("nav-container-xs-active-1");
+    }, 300);
   }
 });
 

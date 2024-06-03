@@ -25,7 +25,6 @@
     top: 8rem;
     height: auto;
     width: 100%;
-
     animation: nav-xs-anim 1s;
     transition: 1s;
     @keyframes nav-xs-anim {
@@ -46,6 +45,10 @@
   }
   @include sm {
     display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-around;
+    height: 4rem;
   }
   height: auto;
   max-height: 17.9rem;
@@ -75,36 +78,64 @@
 .span-xs {
   margin: 1rem;
   border-bottom: 1px white solid;
+  @include sm {
+    margin: 1rem 0;
+    transition: 1s;
+  }
 }
 
 .qui-sommes-nous-xs {
   margin-top: 2rem;
+  @include sm {
+    margin-top: 1rem;
+  }
 }
 
 .contact-xs {
   margin-bottom: 2rem;
+  @include sm {
+    margin-bottom: 1rem;
+  }
 }
 
 // menu vos besoins xs
 
 .menu-vos-besoins-xs {
+  width: 12.222rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 1rem;
+  @include sm {
+    margin: 1rem 0;
+  }
   overflow: hidden;
+  transition: 0.8s;
+}
+.menu-vos-besoins-xs-active-1 {
+  @include sm {
+    width: 18rem;
+  }
 }
 
 .menu-vos-besoins-container-xs {
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
-  // animation: menu-vos-besoins-container-xs 1s;
-  // @keyframes menu-vos-besoins-container-xs {
-  //   0% {
-  //     transform: translateY(-100%);
-  //   }
-  // }
+  @include sm {
+    animation: menu-vos-besoins-container-sm 1s;
+    @keyframes menu-vos-besoins-container-sm {
+      0% {
+        transform: translateY(-100%);
+      }
+    }
+  }
+}
+.menu-vos-besoins-container-xs-active-1 {
+  @include sm {
+    transition: 1s;
+    transform: translateX(100%);
+  }
 }
 
 .vos-besoins-xs {
@@ -118,9 +149,11 @@
 // menu langue xs
 
 .menu-langue-xs {
-  position: absolute;
-  top: 0;
-  right: 0;
+  @include xs {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
   display: flex;
   flex-direction: column;
   margin: 1rem;
