@@ -1,6 +1,7 @@
 @use "media-queries" as *;
 header {
   position: fixed;
+  top: 0;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -10,15 +11,22 @@ header {
   @include sm {
     justify-content: space-between;
   }
-  height: 8rem;
+  height: auto;
   width: 100%;
   background: transparent;
   backdrop-filter: blur(10px);
 }
+.header-active {
+  background: #d4c2a1;
+  // background: linear-gradient(
+  //   to right,
+  //   var(--yellow),
+  //   var(--orange),
+  //   var(--purple),
+  //   var(--blue),
+  //   var(--green)
+  // );
+}
 .header-logo {
   height: 8rem;
-}
-.menu-langue {
-  display: flex;
-  flex-direction: column;
 }

@@ -30,25 +30,28 @@ nav {
 .menu-vos-besoins {
   height: 3rem;
   width: 15rem;
+  min-width: 15rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   transition: 1s;
   overflow: hidden;
+
   &:hover {
     height: 15rem;
-    width: 25rem;
+    width: auto;
+    min-width: 20.5rem;
   }
   &:hover > .menu-vos-besoins-container {
     display: flex;
   }
   &:hover > .vos-besoins {
-    color: var(--purple);
+    color: white;
     letter-spacing: 0.2rem;
   }
   &:hover > .underline-0 {
-    background: var(--purple);
+    background: white;
   }
 }
 .menu-vos-besoins-container {
@@ -59,6 +62,7 @@ nav {
   justify-content: space-around;
   overflow: hidden;
   transition: all 1s;
+  background: #d4c2a1;
 }
 
 .link-vos-besoins {
@@ -66,7 +70,7 @@ nav {
   z-index: 0;
   transition: 1s;
   &:hover {
-    color: var(--purple);
+    color: white;
     letter-spacing: 0.2rem;
   }
 }
@@ -79,6 +83,7 @@ nav {
 .menu-langue {
   height: 3rem;
   display: flex;
+  width: 4rem;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
@@ -86,16 +91,17 @@ nav {
   overflow: hidden;
   &:hover {
     height: 15rem;
+    width: 6.2rem;
   }
   &:hover > .container-menu-langue {
     display: flex;
   }
   &:hover > .first-langue {
     letter-spacing: 0.2rem;
-    color: var(--green);
+    color: white;
   }
   &:hover > .underline-7 {
-    background: var(--green);
+    background: white;
     height: 2px;
   }
 }
@@ -104,31 +110,37 @@ nav {
   display: none;
   flex-direction: column;
   justify-content: space-around;
-  align-items: center;
   height: 100%;
   overflow: hidden;
+  background: #d4c2a1;
 }
 
 .catala {
   &:hover > .link-langue {
-    color: var(--green);
+    color: white;
   }
 }
 .english {
   &:hover > .link-langue {
-    color: var(--green);
+    color: white;
   }
 }
 .spanish {
   &:hover > .link-langue {
-    color: var(--green);
+    color: white;
   }
 }
 
 .link-langue {
   color: white;
+  width: 100%;
+  display: flex;
+  justify-content: start;
 }
-
+.first-langue {
+  margin: 0;
+  margin-bottom: 1rem;
+}
 // span
 
 .span-menu {
@@ -139,43 +151,43 @@ nav {
 }
 .span-menu-1 {
   &:hover > a {
-    color: var(--yellow);
+    color: white;
     letter-spacing: 0.2rem;
   }
   &:hover > div {
-    background: var(--yellow);
+    background: white;
   }
 }
 .span-menu-2 {
   &:hover > a {
-    color: var(--orange);
+    color: white;
     letter-spacing: 0.2rem;
   }
   &:hover > div {
-    background: var(--orange);
+    background: white;
   }
 }
 .span-menu-3 {
   &:hover > a {
-    color: var(--blue);
+    color: white;
     letter-spacing: 0.2rem;
   }
   &:hover > div {
-    background: var(--blue);
+    background: white;
   }
 }
 .span-menu-4 {
   &:hover > a {
-    color: var(--green);
+    color: white;
   }
   &:hover > div {
-    background: var(--green);
+    background: white;
   }
 }
 // underline
 
 .underline {
-  background: var(--purple);
+  background: white;
   height: 2px;
   width: 100%;
   transform: translateX(-120%);
@@ -206,7 +218,7 @@ nav {
   transition: 1s;
 }
 .underline-6 {
-  background: var(--green);
+  background: white;
   height: 2px;
   width: 100%;
   transition: 1s;

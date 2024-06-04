@@ -199,3 +199,19 @@ menuLangueXs.addEventListener("click", () => {
     containerMenulangueXs.style.display = "flex";
   }
 });
+
+// header scroll
+
+const headerContainer = document.querySelector(".header-container");
+const header = document.querySelector(".header");
+
+window.addEventListener("scroll", () => {
+  const { scrollTop, clientHeight } = document.documentElement;
+  const topElementToTopViewport = headerContainer.getBoundingClientRect().top;
+
+  if (scrollTop > scrollTop + topElementToTopViewport - clientHeight * -0.9) {
+    header.classList.add("header-active");
+  } else {
+    header.classList.remove("header-active");
+  }
+});

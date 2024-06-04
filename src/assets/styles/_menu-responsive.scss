@@ -10,6 +10,7 @@
     width: 100%;
     animation: nav-xs-anim 1s;
     transition: 1s;
+    background: #d4c2a1;
     @keyframes nav-xs-anim {
       0% {
         transform: translateX(100%);
@@ -27,6 +28,7 @@
     width: 100%;
     animation: nav-xs-anim 1s;
     transition: 1s;
+    background: #d4c2a1;
     @keyframes nav-xs-anim {
       0% {
         transform: translateX(100%);
@@ -161,6 +163,7 @@
   flex-direction: column;
   margin: 1rem;
   overflow: hidden;
+  background: #d4c2a1;
 }
 .container-menu-langue-xs {
   display: none;
