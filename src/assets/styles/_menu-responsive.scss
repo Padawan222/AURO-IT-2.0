@@ -10,7 +10,7 @@
     width: 100%;
     animation: nav-xs-anim 1s;
     transition: 1s;
-    background: #d4c2a1;
+    background: var(--background);
     @keyframes nav-xs-anim {
       0% {
         transform: translateX(100%);
@@ -28,7 +28,7 @@
     width: 100%;
     animation: nav-xs-anim 1s;
     transition: 1s;
-    background: #d4c2a1;
+    background: var(--background);
     @keyframes nav-xs-anim {
       0% {
         transform: translateX(100%);
@@ -127,6 +127,7 @@
   display: none;
   flex-direction: column;
   align-items: center;
+  background: var(--background);
   @include sm {
     animation: menu-vos-besoins-container-sm 1s;
     @keyframes menu-vos-besoins-container-sm {
@@ -163,11 +164,12 @@
   flex-direction: column;
   margin: 1rem;
   overflow: hidden;
-  background: #d4c2a1;
 }
 .container-menu-langue-xs {
   display: none;
   flex-direction: column;
+  align-items: center;
+  background: var(--background);
   animation: container-menu-langue-xs 1s;
 
   @keyframes container-menu-langue-xs {

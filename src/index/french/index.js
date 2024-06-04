@@ -204,6 +204,10 @@ menuLangueXs.addEventListener("click", () => {
 
 const headerContainer = document.querySelector(".header-container");
 const header = document.querySelector(".header");
+const containerMenuLangue = document.querySelector(".container-menu-langue");
+const menuVosBesoinsContainer = document.querySelector(
+  ".menu-vos-besoins-container"
+);
 
 window.addEventListener("scroll", () => {
   const { scrollTop, clientHeight } = document.documentElement;
@@ -211,7 +215,15 @@ window.addEventListener("scroll", () => {
 
   if (scrollTop > scrollTop + topElementToTopViewport - clientHeight * -0.9) {
     header.classList.add("header-active");
+    containerMenuLangue.classList.add("container-menu-langue-active-1");
+    menuVosBesoinsContainer.classList.add(
+      "menu-vos-besoins-container-active-1"
+    );
   } else {
     header.classList.remove("header-active");
+    containerMenuLangue.classList.remove("container-menu-langue-active-1");
+    menuVosBesoinsContainer.classList.remove(
+      "menu-vos-besoins-container-active-1"
+    );
   }
 });
