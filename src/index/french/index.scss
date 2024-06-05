@@ -128,8 +128,10 @@ main {
   border: 1px var(--blue) dashed;
   margin: 0rem 5rem;
   @include xs {
-    height: 1px;
-    width: 80%;
+    display: none;
+  }
+  @include sm {
+    margin: 0 3rem;
   }
 }
 .text-nos-expertise {
