@@ -1,6 +1,6 @@
 .title {
   font-weight: 700;
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 .under-title {
   font-size: 2.2rem;
@@ -10,6 +10,7 @@
   color: #333;
   font-weight: 700;
   font-size: 1.8rem;
+  margin: 0 2rem;
 }
 .under-text {
   color: #333;
@@ -18,4 +19,7 @@
 }
 .mb-3rem {
   margin-bottom: 3rem;
+}
+.mb-2rem {
+  margin-bottom: 2rem !important;
 }

@@ -15,6 +15,7 @@ header {
   width: 100%;
   background: transparent;
   backdrop-filter: blur(10px);
+  z-index: 1000;
 }
 .header-active {
   background: #d4c2a1;
