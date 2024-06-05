@@ -136,4 +136,63 @@ main {
 }
 .text-nos-expertise {
   font-size: 2.2rem;
+  margin: 5rem 0 0 0;
+}
+
+// nos valeurs
+.content-nos-valeurs {
+  position: relative;
+  height: 55rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(/src/assets/images/10-close-up-young-colleagues-having-meeting.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  @include xs {
+    height: auto;
+  }
+}
+
+.content-nos-valeurs::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.content-nos-valeurs > * {
+  position: relative;
+  z-index: 2;
+}
+
+.container-nos-valeurs {
+  width: 70%;
+  display: flex;
+  flex-direction: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  @include xs {
+    display: none;
+  }
+}
+.container-symbole-nos-valeurs {
+  margin: 0 4rem;
+}
+
+.text-nos-valeurs {
+  color: white;
+  margin: 2rem;
+}
+.symbole-nos-valeurs {
+  height: 8rem;
+  width: auto;
 }
