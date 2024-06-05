@@ -1,0 +1,137 @@
+@use "../../assets/styles/media-queries" as *;
+
+main {
+  grid-area: main;
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+// qui sommes nous
+
+.content-qui-sommes-nous {
+  height: auto;
+  min-height: 60rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row nowrap;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  @include sm {
+    min-height: 40rem;
+  }
+}
+.container-qui-sommes-nous {
+  width: auto;
+  max-width: 45rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  margin: 2rem 5rem;
+  @include xs {
+    align-items: center;
+    text-align: center;
+  }
+  @include sm {
+    max-width: 100rem;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.img-qui-sommes-nous {
+  height: 40rem;
+  width: 60rem;
+  background-image: url(/src/assets/images/2-qui_sommes_nous.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 2rem 5rem 2rem 0;
+  @include xs {
+    display: none;
+  }
+  @include sm {
+    display: none;
+  }
+}
+.title {
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+// nos expertises
+
+.content-nos-expertise {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f9f9f9;
+  padding: 5rem;
+  text-align: center;
+}
+.container-nos-expertise {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row nowrap;
+  justify-content: center;
+  margin: 5rem;
+  @include xs {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.elem-nos-expertise {
+  height: auto;
+  min-height: 30rem;
+  min-width: none;
+  width: auto;
+  max-width: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  text-align: center;
+  margin-top: 2rem;
+}
+.under-title-nos-expertise {
+  display: flex;
+  align-items: center;
+  height: 5.3rem;
+}
+.symbole-nos-expertise {
+  margin-bottom: 5rem;
+}
+.symbole-nos-expertise-1 {
+  height: 5rem;
+  width: 5rem;
+}
+.symbole-nos-expertise-2 {
+  height: 5rem;
+  width: 5rem;
+}
+.symbole-nos-expertise-3 {
+  height: 5rem;
+  width: 5rem;
+}
+.symbole-nos-expertise-4 {
+  height: 5rem;
+  width: 3rem;
+}
+.separator-nos-expertise {
+  height: 100%;
+  width: 1px;
+  border: 1px var(--blue) dashed;
+  margin: 0rem 5rem;
+  @include xs {
+    height: 1px;
+    width: 80%;
+  }
+}
+.text-nos-expertise {
+  font-size: 2.2rem;
+}

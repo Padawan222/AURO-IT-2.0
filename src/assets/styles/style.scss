@@ -11,8 +11,13 @@
 @use "nav-bar" as *;
 @use "menu-responsive" as *;
 @use "menu" as *;
+@use "main" as *;
+@use "btn" as *;
 .grid-container {
-  height: 1000rem;
+  height: auto;
   display: grid;
-  grid: "header-container" auto / auto;
+  grid:
+    "header-container" auto
+    "main" auto
+    / auto;
 }

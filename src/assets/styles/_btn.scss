@@ -1,0 +1,21 @@
+.btn-en-savoir-plus {
+  height: 4rem;
+  width: 18rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background: var(--blue);
+  color: white;
+  letter-spacing: 0.1rem;
+  font-weight: 700;
+  border-radius: 1rem;
+  transition: all 1s;
+  border: 2px solid var(--blue);
+  &:hover {
+    transition: all 1s;
+    font-size: 1.8rem;
+    color: var(--blue);
+    background: white;
+  }
+}

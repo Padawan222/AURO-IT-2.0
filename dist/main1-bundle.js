@@ -67,6 +67,33 @@ body {
     0 1px 3px 1px rgba(60, 64, 67, 0.15);
 }
 
+.title {
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.under-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.text {
+  margin: 5rem 0;
+  color: #333;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.under-text {
+  color: #333;
+  font-weight: 300;
+  font-size: 1.8rem;
+}
+
+.mb-3rem {
+  margin-bottom: 3rem;
+}
+
 @font-face {
   font-family: "strasua";
   src: url(${___CSS_LOADER_URL_REPLACEMENT_0___}) format(opentype);
@@ -745,11 +772,33 @@ nav {
   rotate: 180deg;
 }
 
+.btn-en-savoir-plus {
+  height: 4rem;
+  width: 18rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background: var(--blue);
+  color: white;
+  letter-spacing: 0.1rem;
+  font-weight: 700;
+  border-radius: 1rem;
+  transition: all 1s;
+  border: 2px solid var(--blue);
+}
+.btn-en-savoir-plus:hover {
+  transition: all 1s;
+  font-size: 1.8rem;
+  color: var(--blue);
+  background: white;
+}
+
 .grid-container {
-  height: 1000rem;
+  height: auto;
   display: grid;
-  grid: "header-container" auto/auto;
-}`, "",{"version":3,"sources":["webpack://./src/assets/styles/_base.scss","webpack://./src/assets/styles/style.scss","webpack://./src/assets/styles/_media-queries.scss","webpack://./src/assets/styles/_reset.scss","webpack://./src/assets/styles/_variables.scss","webpack://./src/assets/styles/_fonts.scss","webpack://./src/assets/styles/_header.scss","webpack://./src/assets/styles/_header-container.scss","webpack://./src/assets/styles/_menu-responsive.scss","webpack://./src/assets/styles/_menu.scss"],"names":[],"mappings":"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","sourcesContent":["html {\n  font-size: 62.5%;\n}\nbody {\n  font-family: var(--font-family);\n  color: var(--text);\n  font-size: 1.6rem;\n  width: 100%;\n}\n","@use \"base\" as *;\r\n@use \"classes\" as *;\r\n@use \"media-queries\" as *;\r\n@use \"reset\" as *;\r\n@use \"variables\" as *;\r\n@use \"utils\" as *;\r\n@use \"fonts\" as *;\r\n@use \"separator\" as *;\r\n@use \"header\" as *;\r\n@use \"header-container\" as *;\r\n@use \"nav-bar\" as *;\r\n@use \"menu-responsive\" as *;\r\n@use \"menu\" as *;\r\n.grid-container {\r\n  height: 1000rem;\r\n  display: grid;\r\n  grid: \"header-container\" auto / auto;\r\n}\r\n","/* Landscape phones and down */\r\n@mixin xs {\r\n  @media (max-width: 480px) {\r\n    @content;\r\n  }\r\n}\r\n/* Landscape phone to portrait tablet */\r\n@mixin sm {\r\n  @media (min-width: 480px) and (max-width: 1099px) {\r\n    @content;\r\n  }\r\n}\r\n/* Portrait tablet to landscape and desktop */\r\n@mixin md {\r\n  @media (min-width: 1100px) and (max-width: 1400px) {\r\n    @content;\r\n  }\r\n}\r\n/* Large desktop */\r\n@mixin xl {\r\n  @media (min-width: 1200px) and (max-width: 2559px) {\r\n    @content;\r\n  }\r\n}\r\n@mixin xxl {\r\n  @media (min-width: 2559px) {\r\n    @content;\r\n  }\r\n}\r\n","* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n",":root {\r\n  // font-family\r\n  --font-family-strasua: \"strasua\";\r\n  --font-family: \"Raleway\", sans-serif;\r\n\r\n  // color\r\n  --text: #333;\r\n  --yellow: #efb800;\r\n  --orange: #eb5d0b;\r\n  --pink: #df427e;\r\n  --purple: #803d8f;\r\n  --blue: #009dd7;\r\n  --green: #7cba34;\r\n  --black: #000000;\r\n  --background: #d4c2a1;\r\n\r\n  // box-shadow\r\n  --box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),\r\n    0 1px 3px 1px rgba(60, 64, 67, 0.15);\r\n}\r\n","@font-face {\r\n  font-family: \"strasua\";\r\n  src: url(\"C:/Users/Azstras/OneDrive/Documents/polices/strasua.otf\")\r\n    format(opentype);\r\n}\r\n@font-face {\r\n  font-family: \"raleway\";\r\n  src: url(\"C:/Users/Azstras/OneDrive/Documents/polices/Raleway-Black.ttf\")\r\n    format(opentype);\r\n}\r\n","@use \"media-queries\" as *;\r\nheader {\r\n  position: fixed;\r\n  top: 0;\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: space-around;\r\n  @include xs {\r\n    justify-content: space-between;\r\n  }\r\n  @include sm {\r\n    justify-content: space-between;\r\n  }\r\n  height: auto;\r\n  width: 100%;\r\n  background: transparent;\r\n  backdrop-filter: blur(10px);\r\n}\r\n.header-active {\r\n  background: #d4c2a1;\r\n  // background: linear-gradient(\r\n  //   to right,\r\n  //   var(--yellow),\r\n  //   var(--orange),\r\n  //   var(--purple),\r\n  //   var(--blue),\r\n  //   var(--green)\r\n  // );\r\n}\r\n.header-logo {\r\n  height: 8rem;\r\n}\r\n","@use \"media-queries\" as *;\r\n\r\n.header-container {\r\n  height: 100vh;\r\n  width: 100%;\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n  background: url(\"../images/1-img-header.jpg\") no-repeat center center;\r\n  background-size: cover;\r\n}\r\n\r\n.info-header-content {\r\n  margin-top: 8rem;\r\n  height: auto;\r\n  width: auto;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  text-align: center;\r\n}\r\n\r\n.elem-info-header {\r\n  margin: 4rem;\r\n  @include xs {\r\n    margin: 2rem;\r\n  }\r\n  @include sm {\r\n    margin: 2rem;\r\n  }\r\n}\r\n\r\nh1 {\r\n  color: white;\r\n  font-size: 5rem;\r\n  @include xs {\r\n    font-size: 4rem;\r\n  }\r\n  @include sm {\r\n    font-size: 4rem;\r\n  }\r\n}\r\n\r\nh2 {\r\n  font-size: 3rem;\r\n  background: linear-gradient(\r\n    to right,\r\n    var(--yellow),\r\n    var(--orange),\r\n    var(--purple),\r\n    var(--blue),\r\n    var(--green)\r\n  );\r\n  background-clip: text;\r\n  -webkit-background-clip: text;\r\n  color: transparent;\r\n}\r\n\r\n.container-link-header-info {\r\n  display: flex;\r\n  height: auto;\r\n  @include xs {\r\n    flex-direction: column;\r\n  }\r\n}\r\n\r\n.link-header-info {\r\n  height: 5rem;\r\n  width: auto;\r\n  padding: 2rem;\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n  color: white;\r\n  text-decoration: none;\r\n  font-weight: 300;\r\n  letter-spacing: 0.2rem;\r\n  margin: 0 5rem;\r\n  border: solid 2px white;\r\n  border-radius: 1rem;\r\n  transition: 1s font-size;\r\n  @include xs {\r\n    margin: 2rem 0;\r\n  }\r\n\r\n  &:hover {\r\n    transition: 1s;\r\n    font-size: 1.8rem;\r\n    border: none;\r\n  }\r\n}\r\n","@use \"media-queries\" as *;\r\n\r\n// nav bar\r\n.nav {\r\n  @include xs {\r\n    display: none;\r\n    position: absolute;\r\n    top: 8rem;\r\n    height: auto;\r\n    width: 100%;\r\n    animation: nav-xs-anim 1s;\r\n    transition: 1s;\r\n    background: var(--background);\r\n    @keyframes nav-xs-anim {\r\n      0% {\r\n        transform: translateX(100%);\r\n      }\r\n      100% {\r\n        transform: translateX(0%);\r\n      }\r\n    }\r\n  }\r\n  @include sm {\r\n    display: none;\r\n    position: absolute;\r\n    top: 8rem;\r\n    height: auto;\r\n    width: 100%;\r\n    animation: nav-xs-anim 1s;\r\n    transition: 1s;\r\n    background: var(--background);\r\n    @keyframes nav-xs-anim {\r\n      0% {\r\n        transform: translateX(100%);\r\n      }\r\n      100% {\r\n        transform: translateX(0%);\r\n      }\r\n    }\r\n  }\r\n}\r\n\r\n.nav-container-xs {\r\n  display: none;\r\n  @include xs {\r\n    display: flex;\r\n  }\r\n  @include sm {\r\n    display: flex;\r\n    flex-direction: row;\r\n    align-items: start;\r\n    justify-content: space-around;\r\n    height: 4rem;\r\n  }\r\n  height: auto;\r\n  max-height: 17.9rem;\r\n  width: 100%;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  transition: 1s;\r\n}\r\n.nav-container-xs-active-1 {\r\n  max-height: 27.4rem;\r\n}\r\n\r\n.link-nav-bar-xs {\r\n  color: white;\r\n  text-decoration: none;\r\n  font-weight: 300;\r\n}\r\n\r\n.nav-active-1-xs {\r\n  transition: 1s;\r\n  transform: translateX(100%);\r\n}\r\n.nav-active-2-xs {\r\n  transition: 1s;\r\n  transform: translateX(0%);\r\n}\r\n.span-xs {\r\n  margin: 1rem;\r\n  border-bottom: 1px white solid;\r\n  @include sm {\r\n    margin: 1rem 0;\r\n    transition: 1s;\r\n  }\r\n}\r\n\r\n.qui-sommes-nous-xs {\r\n  margin-top: 2rem;\r\n  @include sm {\r\n    margin-top: 1rem;\r\n  }\r\n}\r\n\r\n.contact-xs {\r\n  margin-bottom: 2rem;\r\n  @include sm {\r\n    margin-bottom: 1rem;\r\n  }\r\n}\r\n\r\n// menu vos besoins xs\r\n\r\n.menu-vos-besoins-xs {\r\n  width: auto;\r\n  @include sm {\r\n    width: 12.222rem;\r\n  }\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  margin: 1rem;\r\n  @include sm {\r\n    margin: 1rem 0;\r\n  }\r\n  overflow: hidden;\r\n  transition: 0.8s;\r\n}\r\n.menu-vos-besoins-xs-active-1 {\r\n  @include sm {\r\n    width: 18rem;\r\n  }\r\n}\r\n\r\n.menu-vos-besoins-container-xs {\r\n  display: none;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  background: var(--background);\r\n  @include sm {\r\n    animation: menu-vos-besoins-container-sm 1s;\r\n    @keyframes menu-vos-besoins-container-sm {\r\n      0% {\r\n        transform: translateY(-100%);\r\n      }\r\n    }\r\n  }\r\n}\r\n.menu-vos-besoins-container-xs-active-1 {\r\n  @include sm {\r\n    transition: 1s;\r\n    transform: translateX(100%);\r\n  }\r\n}\r\n\r\n.vos-besoins-xs {\r\n  margin: 0.5rem;\r\n  border-bottom: 1px white solid;\r\n  cursor: pointer;\r\n}\r\n.grand-comptes-xs {\r\n  margin-top: 1rem;\r\n}\r\n\r\n// menu langue xs\r\n\r\n.menu-langue-xs {\r\n  @include xs {\r\n    position: absolute;\r\n    top: 0;\r\n    right: 0;\r\n  }\r\n  display: flex;\r\n  flex-direction: column;\r\n  margin: 1rem;\r\n  overflow: hidden;\r\n}\r\n.container-menu-langue-xs {\r\n  display: none;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  background: var(--background);\r\n  animation: container-menu-langue-xs 1s;\r\n\r\n  @keyframes container-menu-langue-xs {\r\n    0% {\r\n      transform: translateY(-100%);\r\n    }\r\n  }\r\n}\r\n.container-menu-langue-xs-active-1 {\r\n  transition: 1s;\r\n  transform: translateX(100%);\r\n}\r\n\r\n.span-langue-xs {\r\n  margin: 0.5rem 0;\r\n}\r\n.margin-top {\r\n  margin-top: 1rem;\r\n}\r\n.link-nav-bar-xs-langue {\r\n  color: white;\r\n  text-decoration: none;\r\n  font-weight: 300;\r\n}\r\n// btn nav bar xs\r\n\r\n.btn-xs {\r\n  display: none;\r\n}\r\n@include xs {\r\n  .btn-xs {\r\n    display: flex;\r\n  }\r\n}\r\n@include sm {\r\n  .btn-xs {\r\n    display: flex;\r\n  }\r\n}\r\n\r\n.btn-xs {\r\n  position: absolute;\r\n  right: 0;\r\n  height: 2.5rem;\r\n  width: 3rem;\r\n\r\n  flex-direction: column;\r\n  justify-content: space-around;\r\n  align-items: center;\r\n  transition: all 2s;\r\n  cursor: pointer;\r\n  margin: 1rem;\r\n}\r\n\r\n.bar {\r\n  height: 2px;\r\n  width: 2.5rem;\r\n  background: white;\r\n  position: absolute;\r\n  transition: all 0.3s;\r\n}\r\n.bar-1 {\r\n  top: 0;\r\n}\r\n.bar-1-active-1 {\r\n  top: calc(50% - 1px);\r\n}\r\n.bar-1-active-2 {\r\n  rotate: 45deg;\r\n}\r\n\r\n.bar-2-active {\r\n  opacity: 0;\r\n}\r\n.bar-3 {\r\n  bottom: 0;\r\n}\r\n.bar-3-active-1 {\r\n  bottom: calc(50% - 1px);\r\n}\r\n.bar-3-active-2 {\r\n  rotate: -45deg;\r\n}\r\n\r\n.fleche-xs {\r\n  color: white;\r\n}\r\n.fleche-xs-active-1 {\r\n  rotate: 180deg;\r\n}\r\n","@use \"media-queries\" as *;\r\n\r\n// nav bar\r\nnav {\r\n  height: 8rem;\r\n  display: flex;\r\n  align-items: center;\r\n}\r\n.nav-container {\r\n  height: 2rem;\r\n  display: flex;\r\n  align-items: start;\r\n  @include xs {\r\n    display: none;\r\n  }\r\n  @include sm {\r\n    display: none;\r\n  }\r\n}\r\n.link-nav-bar {\r\n  margin: 0 2rem 0 2rem;\r\n  color: white;\r\n  font-weight: 300;\r\n  text-decoration: none;\r\n  transition: 1s;\r\n}\r\n\r\n// menu vos besoins\r\n\r\n.menu-vos-besoins {\r\n  height: 3rem;\r\n  width: 15rem;\r\n  min-width: 15rem;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  justify-content: space-between;\r\n  transition: 1s;\r\n  overflow: hidden;\r\n\r\n  &:hover {\r\n    height: 15rem;\r\n    width: auto;\r\n    min-width: 20.5rem;\r\n  }\r\n  &:hover > .menu-vos-besoins-container {\r\n    display: flex;\r\n  }\r\n  &:hover > .vos-besoins {\r\n    color: white;\r\n    letter-spacing: 0.2rem;\r\n  }\r\n  &:hover > .underline-0 {\r\n    background: white;\r\n  }\r\n}\r\n.menu-vos-besoins-container {\r\n  height: 13rem;\r\n  display: none;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  justify-content: space-around;\r\n  overflow: hidden;\r\n  transition: all 1s;\r\n}\r\n.menu-vos-besoins-container-active-1 {\r\n  background: #d4c2a1;\r\n}\r\n\r\n.link-vos-besoins {\r\n  position: relative;\r\n  z-index: 0;\r\n  transition: 1s;\r\n  &:hover {\r\n    color: white;\r\n    letter-spacing: 0.2rem;\r\n  }\r\n}\r\n.vos-besoins {\r\n  margin: 0 0 1rem 0;\r\n  cursor: pointer;\r\n}\r\n\r\n// menu langue\r\n\r\n.menu-langue {\r\n  height: 3rem;\r\n  display: flex;\r\n  width: 4rem;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  justify-content: space-between;\r\n  transition: 1s;\r\n  overflow: hidden;\r\n  &:hover {\r\n    height: 15rem;\r\n    width: 6.2rem;\r\n  }\r\n  &:hover > .container-menu-langue {\r\n    display: flex;\r\n  }\r\n  &:hover > .first-langue {\r\n    letter-spacing: 0.2rem;\r\n    color: white;\r\n  }\r\n  &:hover > .underline-7 {\r\n    background: white;\r\n    height: 2px;\r\n  }\r\n}\r\n\r\n.container-menu-langue {\r\n  display: none;\r\n  flex-direction: column;\r\n  justify-content: space-around;\r\n  height: 100%;\r\n  overflow: hidden;\r\n}\r\n.container-menu-langue-active-1 {\r\n  background: #d4c2a1;\r\n}\r\n.catala {\r\n  &:hover > .link-langue {\r\n    color: white;\r\n  }\r\n}\r\n.english {\r\n  &:hover > .link-langue {\r\n    color: white;\r\n  }\r\n}\r\n.spanish {\r\n  &:hover > .link-langue {\r\n    color: white;\r\n  }\r\n}\r\n\r\n.link-langue {\r\n  color: white;\r\n  width: 100%;\r\n  display: flex;\r\n  justify-content: start;\r\n}\r\n.first-langue {\r\n  margin: 0;\r\n  margin-bottom: 1rem;\r\n}\r\n// span\r\n\r\n.span-menu {\r\n  display: flex;\r\n  flex-direction: column;\r\n  height: 3rem;\r\n  justify-content: space-between;\r\n}\r\n.span-menu-1 {\r\n  &:hover > a {\r\n    color: white;\r\n    letter-spacing: 0.2rem;\r\n  }\r\n  &:hover > div {\r\n    background: white;\r\n  }\r\n}\r\n.span-menu-2 {\r\n  &:hover > a {\r\n    color: white;\r\n    letter-spacing: 0.2rem;\r\n  }\r\n  &:hover > div {\r\n    background: white;\r\n  }\r\n}\r\n.span-menu-3 {\r\n  &:hover > a {\r\n    color: white;\r\n    letter-spacing: 0.2rem;\r\n  }\r\n  &:hover > div {\r\n    background: white;\r\n  }\r\n}\r\n.span-menu-4 {\r\n  &:hover > a {\r\n    color: white;\r\n  }\r\n  &:hover > div {\r\n    background: white;\r\n  }\r\n}\r\n// underline\r\n\r\n.underline {\r\n  background: white;\r\n  height: 2px;\r\n  width: 100%;\r\n  transform: translateX(-120%);\r\n  transition: 1s;\r\n}\r\n.underline-active-1 {\r\n  transform: translateX(0%);\r\n}\r\n.underline-0 {\r\n  background: white;\r\n  height: 2px;\r\n  width: 100%;\r\n  transition: 1s;\r\n}\r\n.underline-0-active-1 {\r\n  transform: translateX(120%);\r\n}\r\n.underline-4 {\r\n  background: white;\r\n  height: 1px;\r\n  width: 100%;\r\n  transition: 1s;\r\n}\r\n.underline-5 {\r\n  background: white;\r\n  height: 1px;\r\n  width: 100%;\r\n  transition: 1s;\r\n}\r\n.underline-6 {\r\n  background: white;\r\n  height: 2px;\r\n  width: 100%;\r\n  transition: 1s;\r\n  transform: translateX(-120%);\r\n}\r\n.underline-6-active-1 {\r\n  transform: translateX(0%);\r\n}\r\n.underline-7 {\r\n  background: white;\r\n  height: 1px;\r\n  width: 100%;\r\n  transition: 1s;\r\n}\r\n.underline-7-active-1 {\r\n  transform: translateX(120%);\r\n}\r\n\r\n// fleche / anim\r\n\r\n.fleche {\r\n  rotate: 90deg;\r\n  transition: 1s;\r\n}\r\n.angle-active-1 {\r\n  rotate: 180deg;\r\n}\r\n"],"sourceRoot":""}]);
+  grid: "header-container" auto "main" auto/auto;
+}`, "",{"version":3,"sources":["webpack://./src/assets/styles/_base.scss","webpack://./src/assets/styles/style.scss","webpack://./src/assets/styles/_media-queries.scss","webpack://./src/assets/styles/_reset.scss","webpack://./src/assets/styles/_variables.scss","webpack://./src/assets/styles/_utils.scss","webpack://./src/assets/styles/_fonts.scss","webpack://./src/assets/styles/_header.scss","webpack://./src/assets/styles/_header-container.scss","webpack://./src/assets/styles/_menu-responsive.scss","webpack://./src/assets/styles/_menu.scss","webpack://./src/assets/styles/_btn.scss"],"names":[],"mappings":"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","sourcesContent":["html {\n  font-size: 62.5%;\n}\nbody {\n  font-family: var(--font-family);\n  color: var(--text);\n  font-size: 1.6rem;\n  width: 100%;\n}\n","@use \"base\" as *;\r\n@use \"classes\" as *;\r\n@use \"media-queries\" as *;\r\n@use \"reset\" as *;\r\n@use \"variables\" as *;\r\n@use \"utils\" as *;\r\n@use \"fonts\" as *;\r\n@use \"separator\" as *;\r\n@use \"header\" as *;\r\n@use \"header-container\" as *;\r\n@use \"nav-bar\" as *;\r\n@use \"menu-responsive\" as *;\r\n@use \"menu\" as *;\r\n@use \"main\" as *;\r\n@use \"btn\" as *;\r\n.grid-container {\r\n  height: auto;\r\n  display: grid;\r\n  grid:\r\n    \"header-container\" auto\r\n    \"main\" auto\r\n    / auto;\r\n}\r\n","/* Landscape phones and down */\r\n@mixin xs {\r\n  @media (max-width: 480px) {\r\n    @content;\r\n  }\r\n}\r\n/* Landscape phone to portrait tablet */\r\n@mixin sm {\r\n  @media (min-width: 480px) and (max-width: 1099px) {\r\n    @content;\r\n  }\r\n}\r\n/* Portrait tablet to landscape and desktop */\r\n@mixin md {\r\n  @media (min-width: 1100px) and (max-width: 1400px) {\r\n    @content;\r\n  }\r\n}\r\n/* Large desktop */\r\n@mixin xl {\r\n  @media (min-width: 1200px) and (max-width: 2559px) {\r\n    @content;\r\n  }\r\n}\r\n@mixin xxl {\r\n  @media (min-width: 2559px) {\r\n    @content;\r\n  }\r\n}\r\n","* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n",":root {\r\n  // font-family\r\n  --font-family-strasua: \"strasua\";\r\n  --font-family: \"Raleway\", sans-serif;\r\n\r\n  // color\r\n  --text: #333;\r\n  --yellow: #efb800;\r\n  --orange: #eb5d0b;\r\n  --pink: #df427e;\r\n  --purple: #803d8f;\r\n  --blue: #009dd7;\r\n  --green: #7cba34;\r\n  --black: #000000;\r\n  --background: #d4c2a1;\r\n\r\n  // box-shadow\r\n  --box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),\r\n    0 1px 3px 1px rgba(60, 64, 67, 0.15);\r\n}\r\n",".title {\r\n  font-weight: 700;\r\n  font-size: 3rem;\r\n}\r\n.under-title {\r\n  font-size: 2.2rem;\r\n  font-weight: 700;\r\n}\r\n.text {\r\n  margin: 5rem 0;\r\n  color: #333;\r\n  font-weight: 700;\r\n  font-size: 1.8rem;\r\n}\r\n.under-text {\r\n  color: #333;\r\n  font-weight: 300;\r\n  font-size: 1.8rem;\r\n}\r\n.mb-3rem {\r\n  margin-bottom: 3rem;\r\n}\r\n","@font-face {\r\n  font-family: \"strasua\";\r\n  src: url(\"C:/Users/Azstras/OneDrive/Documents/polices/strasua.otf\")\r\n    format(opentype);\r\n}\r\n@font-face {\r\n  font-family: \"raleway\";\r\n  src: url(\"C:/Users/Azstras/OneDrive/Documents/polices/Raleway-Black.ttf\")\r\n    format(opentype);\r\n}\r\n","@use \"media-queries\" as *;\r\nheader {\r\n  position: fixed;\r\n  top: 0;\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: space-around;\r\n  @include xs {\r\n    justify-content: space-between;\r\n  }\r\n  @include sm {\r\n    justify-content: space-between;\r\n  }\r\n  height: auto;\r\n  width: 100%;\r\n  background: transparent;\r\n  backdrop-filter: blur(10px);\r\n}\r\n.header-active {\r\n  background: #d4c2a1;\r\n  // background: linear-gradient(\r\n  //   to right,\r\n  //   var(--yellow),\r\n  //   var(--orange),\r\n  //   var(--purple),\r\n  //   var(--blue),\r\n  //   var(--green)\r\n  // );\r\n}\r\n.header-logo {\r\n  height: 8rem;\r\n}\r\n","@use \"media-queries\" as *;\r\n\r\n.header-container {\r\n  height: 100vh;\r\n  width: 100%;\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n  background: url(\"../images/1-img-header.jpg\") no-repeat center center;\r\n  background-size: cover;\r\n}\r\n\r\n.info-header-content {\r\n  margin-top: 8rem;\r\n  height: auto;\r\n  width: auto;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  text-align: center;\r\n}\r\n\r\n.elem-info-header {\r\n  margin: 4rem;\r\n  @include xs {\r\n    margin: 2rem;\r\n  }\r\n  @include sm {\r\n    margin: 2rem;\r\n  }\r\n}\r\n\r\nh1 {\r\n  color: white;\r\n  font-size: 5rem;\r\n  @include xs {\r\n    font-size: 4rem;\r\n  }\r\n  @include sm {\r\n    font-size: 4rem;\r\n  }\r\n}\r\n\r\nh2 {\r\n  font-size: 3rem;\r\n  background: linear-gradient(\r\n    to right,\r\n    var(--yellow),\r\n    var(--orange),\r\n    var(--purple),\r\n    var(--blue),\r\n    var(--green)\r\n  );\r\n  background-clip: text;\r\n  -webkit-background-clip: text;\r\n  color: transparent;\r\n}\r\n\r\n.container-link-header-info {\r\n  display: flex;\r\n  height: auto;\r\n  @include xs {\r\n    flex-direction: column;\r\n  }\r\n}\r\n\r\n.link-header-info {\r\n  height: 5rem;\r\n  width: auto;\r\n  padding: 2rem;\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n  color: white;\r\n  text-decoration: none;\r\n  font-weight: 300;\r\n  letter-spacing: 0.2rem;\r\n  margin: 0 5rem;\r\n  border: solid 2px white;\r\n  border-radius: 1rem;\r\n  transition: 1s font-size;\r\n  @include xs {\r\n    margin: 2rem 0;\r\n  }\r\n\r\n  &:hover {\r\n    transition: 1s;\r\n    font-size: 1.8rem;\r\n    border: none;\r\n  }\r\n}\r\n","@use \"media-queries\" as *;\r\n\r\n// nav bar\r\n.nav {\r\n  @include xs {\r\n    display: none;\r\n    position: absolute;\r\n    top: 8rem;\r\n    height: auto;\r\n    width: 100%;\r\n    animation: nav-xs-anim 1s;\r\n    transition: 1s;\r\n    background: var(--background);\r\n    @keyframes nav-xs-anim {\r\n      0% {\r\n        transform: translateX(100%);\r\n      }\r\n      100% {\r\n        transform: translateX(0%);\r\n      }\r\n    }\r\n  }\r\n  @include sm {\r\n    display: none;\r\n    position: absolute;\r\n    top: 8rem;\r\n    height: auto;\r\n    width: 100%;\r\n    animation: nav-xs-anim 1s;\r\n    transition: 1s;\r\n    background: var(--background);\r\n    @keyframes nav-xs-anim {\r\n      0% {\r\n        transform: translateX(100%);\r\n      }\r\n      100% {\r\n        transform: translateX(0%);\r\n      }\r\n    }\r\n  }\r\n}\r\n\r\n.nav-container-xs {\r\n  display: none;\r\n  @include xs {\r\n    display: flex;\r\n  }\r\n  @include sm {\r\n    display: flex;\r\n    flex-direction: row;\r\n    align-items: start;\r\n    justify-content: space-around;\r\n    height: 4rem;\r\n  }\r\n  height: auto;\r\n  max-height: 17.9rem;\r\n  width: 100%;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  transition: 1s;\r\n}\r\n.nav-container-xs-active-1 {\r\n  max-height: 27.4rem;\r\n}\r\n\r\n.link-nav-bar-xs {\r\n  color: white;\r\n  text-decoration: none;\r\n  font-weight: 300;\r\n}\r\n\r\n.nav-active-1-xs {\r\n  transition: 1s;\r\n  transform: translateX(100%);\r\n}\r\n.nav-active-2-xs {\r\n  transition: 1s;\r\n  transform: translateX(0%);\r\n}\r\n.span-xs {\r\n  margin: 1rem;\r\n  border-bottom: 1px white solid;\r\n  @include sm {\r\n    margin: 1rem 0;\r\n    transition: 1s;\r\n  }\r\n}\r\n\r\n.qui-sommes-nous-xs {\r\n  margin-top: 2rem;\r\n  @include sm {\r\n    margin-top: 1rem;\r\n  }\r\n}\r\n\r\n.contact-xs {\r\n  margin-bottom: 2rem;\r\n  @include sm {\r\n    margin-bottom: 1rem;\r\n  }\r\n}\r\n\r\n// menu vos besoins xs\r\n\r\n.menu-vos-besoins-xs {\r\n  width: auto;\r\n  @include sm {\r\n    width: 12.222rem;\r\n  }\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  margin: 1rem;\r\n  @include sm {\r\n    margin: 1rem 0;\r\n  }\r\n  overflow: hidden;\r\n  transition: 0.8s;\r\n}\r\n.menu-vos-besoins-xs-active-1 {\r\n  @include sm {\r\n    width: 18rem;\r\n  }\r\n}\r\n\r\n.menu-vos-besoins-container-xs {\r\n  display: none;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  background: var(--background);\r\n  @include sm {\r\n    animation: menu-vos-besoins-container-sm 1s;\r\n    @keyframes menu-vos-besoins-container-sm {\r\n      0% {\r\n        transform: translateY(-100%);\r\n      }\r\n    }\r\n  }\r\n}\r\n.menu-vos-besoins-container-xs-active-1 {\r\n  @include sm {\r\n    transition: 1s;\r\n    transform: translateX(100%);\r\n  }\r\n}\r\n\r\n.vos-besoins-xs {\r\n  margin: 0.5rem;\r\n  border-bottom: 1px white solid;\r\n  cursor: pointer;\r\n}\r\n.grand-comptes-xs {\r\n  margin-top: 1rem;\r\n}\r\n\r\n// menu langue xs\r\n\r\n.menu-langue-xs {\r\n  @include xs {\r\n    position: absolute;\r\n    top: 0;\r\n    right: 0;\r\n  }\r\n  display: flex;\r\n  flex-direction: column;\r\n  margin: 1rem;\r\n  overflow: hidden;\r\n}\r\n.container-menu-langue-xs {\r\n  display: none;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  background: var(--background);\r\n  animation: container-menu-langue-xs 1s;\r\n\r\n  @keyframes container-menu-langue-xs {\r\n    0% {\r\n      transform: translateY(-100%);\r\n    }\r\n  }\r\n}\r\n.container-menu-langue-xs-active-1 {\r\n  transition: 1s;\r\n  transform: translateX(100%);\r\n}\r\n\r\n.span-langue-xs {\r\n  margin: 0.5rem 0;\r\n}\r\n.margin-top {\r\n  margin-top: 1rem;\r\n}\r\n.link-nav-bar-xs-langue {\r\n  color: white;\r\n  text-decoration: none;\r\n  font-weight: 300;\r\n}\r\n// btn nav bar xs\r\n\r\n.btn-xs {\r\n  display: none;\r\n}\r\n@include xs {\r\n  .btn-xs {\r\n    display: flex;\r\n  }\r\n}\r\n@include sm {\r\n  .btn-xs {\r\n    display: flex;\r\n  }\r\n}\r\n\r\n.btn-xs {\r\n  position: absolute;\r\n  right: 0;\r\n  height: 2.5rem;\r\n  width: 3rem;\r\n\r\n  flex-direction: column;\r\n  justify-content: space-around;\r\n  align-items: center;\r\n  transition: all 2s;\r\n  cursor: pointer;\r\n  margin: 1rem;\r\n}\r\n\r\n.bar {\r\n  height: 2px;\r\n  width: 2.5rem;\r\n  background: white;\r\n  position: absolute;\r\n  transition: all 0.3s;\r\n}\r\n.bar-1 {\r\n  top: 0;\r\n}\r\n.bar-1-active-1 {\r\n  top: calc(50% - 1px);\r\n}\r\n.bar-1-active-2 {\r\n  rotate: 45deg;\r\n}\r\n\r\n.bar-2-active {\r\n  opacity: 0;\r\n}\r\n.bar-3 {\r\n  bottom: 0;\r\n}\r\n.bar-3-active-1 {\r\n  bottom: calc(50% - 1px);\r\n}\r\n.bar-3-active-2 {\r\n  rotate: -45deg;\r\n}\r\n\r\n.fleche-xs {\r\n  color: white;\r\n}\r\n.fleche-xs-active-1 {\r\n  rotate: 180deg;\r\n}\r\n","@use \"media-queries\" as *;\r\n\r\n// nav bar\r\nnav {\r\n  height: 8rem;\r\n  display: flex;\r\n  align-items: center;\r\n}\r\n.nav-container {\r\n  height: 2rem;\r\n  display: flex;\r\n  align-items: start;\r\n  @include xs {\r\n    display: none;\r\n  }\r\n  @include sm {\r\n    display: none;\r\n  }\r\n}\r\n.link-nav-bar {\r\n  margin: 0 2rem 0 2rem;\r\n  color: white;\r\n  font-weight: 300;\r\n  text-decoration: none;\r\n  transition: 1s;\r\n}\r\n\r\n// menu vos besoins\r\n\r\n.menu-vos-besoins {\r\n  height: 3rem;\r\n  width: 15rem;\r\n  min-width: 15rem;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  justify-content: space-between;\r\n  transition: 1s;\r\n  overflow: hidden;\r\n\r\n  &:hover {\r\n    height: 15rem;\r\n    width: auto;\r\n    min-width: 20.5rem;\r\n  }\r\n  &:hover > .menu-vos-besoins-container {\r\n    display: flex;\r\n  }\r\n  &:hover > .vos-besoins {\r\n    color: white;\r\n    letter-spacing: 0.2rem;\r\n  }\r\n  &:hover > .underline-0 {\r\n    background: white;\r\n  }\r\n}\r\n.menu-vos-besoins-container {\r\n  height: 13rem;\r\n  display: none;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  justify-content: space-around;\r\n  overflow: hidden;\r\n  transition: all 1s;\r\n}\r\n.menu-vos-besoins-container-active-1 {\r\n  background: #d4c2a1;\r\n}\r\n\r\n.link-vos-besoins {\r\n  position: relative;\r\n  z-index: 0;\r\n  transition: 1s;\r\n  &:hover {\r\n    color: white;\r\n    letter-spacing: 0.2rem;\r\n  }\r\n}\r\n.vos-besoins {\r\n  margin: 0 0 1rem 0;\r\n  cursor: pointer;\r\n}\r\n\r\n// menu langue\r\n\r\n.menu-langue {\r\n  height: 3rem;\r\n  display: flex;\r\n  width: 4rem;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  justify-content: space-between;\r\n  transition: 1s;\r\n  overflow: hidden;\r\n  &:hover {\r\n    height: 15rem;\r\n    width: 6.2rem;\r\n  }\r\n  &:hover > .container-menu-langue {\r\n    display: flex;\r\n  }\r\n  &:hover > .first-langue {\r\n    letter-spacing: 0.2rem;\r\n    color: white;\r\n  }\r\n  &:hover > .underline-7 {\r\n    background: white;\r\n    height: 2px;\r\n  }\r\n}\r\n\r\n.container-menu-langue {\r\n  display: none;\r\n  flex-direction: column;\r\n  justify-content: space-around;\r\n  height: 100%;\r\n  overflow: hidden;\r\n}\r\n.container-menu-langue-active-1 {\r\n  background: #d4c2a1;\r\n}\r\n.catala {\r\n  &:hover > .link-langue {\r\n    color: white;\r\n  }\r\n}\r\n.english {\r\n  &:hover > .link-langue {\r\n    color: white;\r\n  }\r\n}\r\n.spanish {\r\n  &:hover > .link-langue {\r\n    color: white;\r\n  }\r\n}\r\n\r\n.link-langue {\r\n  color: white;\r\n  width: 100%;\r\n  display: flex;\r\n  justify-content: start;\r\n}\r\n.first-langue {\r\n  margin: 0;\r\n  margin-bottom: 1rem;\r\n}\r\n// span\r\n\r\n.span-menu {\r\n  display: flex;\r\n  flex-direction: column;\r\n  height: 3rem;\r\n  justify-content: space-between;\r\n}\r\n.span-menu-1 {\r\n  &:hover > a {\r\n    color: white;\r\n    letter-spacing: 0.2rem;\r\n  }\r\n  &:hover > div {\r\n    background: white;\r\n  }\r\n}\r\n.span-menu-2 {\r\n  &:hover > a {\r\n    color: white;\r\n    letter-spacing: 0.2rem;\r\n  }\r\n  &:hover > div {\r\n    background: white;\r\n  }\r\n}\r\n.span-menu-3 {\r\n  &:hover > a {\r\n    color: white;\r\n    letter-spacing: 0.2rem;\r\n  }\r\n  &:hover > div {\r\n    background: white;\r\n  }\r\n}\r\n.span-menu-4 {\r\n  &:hover > a {\r\n    color: white;\r\n  }\r\n  &:hover > div {\r\n    background: white;\r\n  }\r\n}\r\n// underline\r\n\r\n.underline {\r\n  background: white;\r\n  height: 2px;\r\n  width: 100%;\r\n  transform: translateX(-120%);\r\n  transition: 1s;\r\n}\r\n.underline-active-1 {\r\n  transform: translateX(0%);\r\n}\r\n.underline-0 {\r\n  background: white;\r\n  height: 2px;\r\n  width: 100%;\r\n  transition: 1s;\r\n}\r\n.underline-0-active-1 {\r\n  transform: translateX(120%);\r\n}\r\n.underline-4 {\r\n  background: white;\r\n  height: 1px;\r\n  width: 100%;\r\n  transition: 1s;\r\n}\r\n.underline-5 {\r\n  background: white;\r\n  height: 1px;\r\n  width: 100%;\r\n  transition: 1s;\r\n}\r\n.underline-6 {\r\n  background: white;\r\n  height: 2px;\r\n  width: 100%;\r\n  transition: 1s;\r\n  transform: translateX(-120%);\r\n}\r\n.underline-6-active-1 {\r\n  transform: translateX(0%);\r\n}\r\n.underline-7 {\r\n  background: white;\r\n  height: 1px;\r\n  width: 100%;\r\n  transition: 1s;\r\n}\r\n.underline-7-active-1 {\r\n  transform: translateX(120%);\r\n}\r\n\r\n// fleche / anim\r\n\r\n.fleche {\r\n  rotate: 90deg;\r\n  transition: 1s;\r\n}\r\n.angle-active-1 {\r\n  rotate: 180deg;\r\n}\r\n",".btn-en-savoir-plus {\r\n  height: 4rem;\r\n  width: 18rem;\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n  text-decoration: none;\r\n  background: var(--blue);\r\n  color: white;\r\n  letter-spacing: 0.1rem;\r\n  font-weight: 700;\r\n  border-radius: 1rem;\r\n  transition: all 1s;\r\n  border: 2px solid var(--blue);\r\n  &:hover {\r\n    transition: all 1s;\r\n    font-size: 1.8rem;\r\n    color: var(--blue);\r\n    background: white;\r\n  }\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -770,12 +819,177 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__);
 // Imports
 
 
+
+var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../../../../../../src/assets/images/2-qui_sommes_nous.jpg */ "./src/assets/images/2-qui_sommes_nous.jpg"), __webpack_require__.b);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ``, "",{"version":3,"sources":[],"names":[],"mappings":"","sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, `/* Landscape phones and down */
+/* Landscape phone to portrait tablet */
+/* Portrait tablet to landscape and desktop */
+/* Large desktop */
+main {
+  grid-area: main;
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-qui-sommes-nous {
+  height: auto;
+  min-height: 60rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row nowrap;
+  justify-content: center;
+  align-items: center;
+  background: white;
+}
+@media (min-width: 480px) and (max-width: 1099px) {
+  .content-qui-sommes-nous {
+    min-height: 40rem;
+  }
+}
+
+.container-qui-sommes-nous {
+  width: auto;
+  max-width: 45rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  margin: 2rem 5rem;
+}
+@media (max-width: 480px) {
+  .container-qui-sommes-nous {
+    align-items: center;
+    text-align: center;
+  }
+}
+@media (min-width: 480px) and (max-width: 1099px) {
+  .container-qui-sommes-nous {
+    max-width: 100rem;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.img-qui-sommes-nous {
+  height: 40rem;
+  width: 60rem;
+  background-image: url(${___CSS_LOADER_URL_REPLACEMENT_0___});
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 2rem 5rem 2rem 0;
+}
+@media (max-width: 480px) {
+  .img-qui-sommes-nous {
+    display: none;
+  }
+}
+@media (min-width: 480px) and (max-width: 1099px) {
+  .img-qui-sommes-nous {
+    display: none;
+  }
+}
+
+.title {
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.content-nos-expertise {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f9f9f9;
+  padding: 5rem;
+  text-align: center;
+}
+
+.container-nos-expertise {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row nowrap;
+  justify-content: center;
+  margin: 5rem;
+}
+@media (max-width: 480px) {
+  .container-nos-expertise {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.elem-nos-expertise {
+  height: auto;
+  min-height: 30rem;
+  min-width: none;
+  width: auto;
+  max-width: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.under-title-nos-expertise {
+  display: flex;
+  align-items: center;
+  height: 5.3rem;
+}
+
+.symbole-nos-expertise {
+  margin-bottom: 5rem;
+}
+
+.symbole-nos-expertise-1 {
+  height: 5rem;
+  width: 5rem;
+}
+
+.symbole-nos-expertise-2 {
+  height: 5rem;
+  width: 5rem;
+}
+
+.symbole-nos-expertise-3 {
+  height: 5rem;
+  width: 5rem;
+}
+
+.symbole-nos-expertise-4 {
+  height: 5rem;
+  width: 3rem;
+}
+
+.separator-nos-expertise {
+  height: 100%;
+  width: 1px;
+  border: 1px var(--blue) dashed;
+  margin: 0rem 5rem;
+}
+@media (max-width: 480px) {
+  .separator-nos-expertise {
+    height: 1px;
+    width: 80%;
+  }
+}
+
+.text-nos-expertise {
+  font-size: 2.2rem;
+}`, "",{"version":3,"sources":["webpack://./src/assets/styles/_media-queries.scss","webpack://./src/index/french/index.scss"],"names":[],"mappings":"AAAA,8BAAA;AAMA,uCAAA;AAMA,6CAAA;AAMA,kBAAA;AChBA;EACE,eAAA;EACA,YAAA;EACA,WAAA;EACA,aAAA;EACA,sBAAA;AAGF;;AAEA;EACE,YAAA;EACA,iBAAA;EACA,WAAA;EACA,aAAA;EACA,0BAAA;EACA,uBAAA;EACA,mBAAA;EACA,iBAAA;AACF;ADbE;ECIF;IAUI,iBAAA;EAGF;AACF;;AADA;EACE,WAAA;EACA,gBAAA;EACA,aAAA;EACA,sBAAA;EACA,kBAAA;EACA,uBAAA;EACA,iBAAA;AAIF;ADlCE;ECuBF;IASI,mBAAA;IACA,kBAAA;EAMF;AACF;ADlCE;ECiBF;IAaI,iBAAA;IACA,mBAAA;IACA,kBAAA;EAQF;AACF;;AALA;EACE,aAAA;EACA,YAAA;EACA,yDAAA;EACA,4BAAA;EACA,wBAAA;EACA,wBAAA;AAQF;ADxDE;EC0CF;IAQI,aAAA;EAUF;AACF;ADvDE;ECoCF;IAWI,aAAA;EAYF;AACF;;AAVA;EACE,gBAAA;EACA,eAAA;AAaF;;AARA;EACE,YAAA;EACA,WAAA;EACA,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,mBAAA;EACA,aAAA;EACA,kBAAA;AAWF;;AATA;EACE,YAAA;EACA,WAAA;EACA,aAAA;EACA,0BAAA;EACA,uBAAA;EACA,YAAA;AAYF;AD3FE;ECyEF;IAQI,sBAAA;IACA,mBAAA;EAcF;AACF;;AAZA;EACE,YAAA;EACA,iBAAA;EACA,eAAA;EACA,WAAA;EACA,gBAAA;EACA,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,sBAAA;EACA,kBAAA;EACA,gBAAA;AAeF;;AAbA;EACE,aAAA;EACA,mBAAA;EACA,cAAA;AAgBF;;AAdA;EACE,mBAAA;AAiBF;;AAfA;EACE,YAAA;EACA,WAAA;AAkBF;;AAhBA;EACE,YAAA;EACA,WAAA;AAmBF;;AAjBA;EACE,YAAA;EACA,WAAA;AAoBF;;AAlBA;EACE,YAAA;EACA,WAAA;AAqBF;;AAnBA;EACE,YAAA;EACA,UAAA;EACA,8BAAA;EACA,iBAAA;AAsBF;ADpJE;EC0HF;IAMI,WAAA;IACA,UAAA;EAwBF;AACF;;AAtBA;EACE,iBAAA;AAyBF","sourcesContent":["/* Landscape phones and down */\r\n@mixin xs {\r\n  @media (max-width: 480px) {\r\n    @content;\r\n  }\r\n}\r\n/* Landscape phone to portrait tablet */\r\n@mixin sm {\r\n  @media (min-width: 480px) and (max-width: 1099px) {\r\n    @content;\r\n  }\r\n}\r\n/* Portrait tablet to landscape and desktop */\r\n@mixin md {\r\n  @media (min-width: 1100px) and (max-width: 1400px) {\r\n    @content;\r\n  }\r\n}\r\n/* Large desktop */\r\n@mixin xl {\r\n  @media (min-width: 1200px) and (max-width: 2559px) {\r\n    @content;\r\n  }\r\n}\r\n@mixin xxl {\r\n  @media (min-width: 2559px) {\r\n    @content;\r\n  }\r\n}\r\n","@use \"../../assets/styles/media-queries\" as *;\r\n\r\nmain {\r\n  grid-area: main;\r\n  height: auto;\r\n  width: 100%;\r\n  display: flex;\r\n  flex-direction: column;\r\n}\r\n\r\n// qui sommes nous\r\n\r\n.content-qui-sommes-nous {\r\n  height: auto;\r\n  min-height: 60rem;\r\n  width: 100%;\r\n  display: flex;\r\n  flex-direction: row nowrap;\r\n  justify-content: center;\r\n  align-items: center;\r\n  background: white;\r\n  @include sm {\r\n    min-height: 40rem;\r\n  }\r\n}\r\n.container-qui-sommes-nous {\r\n  width: auto;\r\n  max-width: 45rem;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: start;\r\n  justify-content: center;\r\n  margin: 2rem 5rem;\r\n  @include xs {\r\n    align-items: center;\r\n    text-align: center;\r\n  }\r\n  @include sm {\r\n    max-width: 100rem;\r\n    align-items: center;\r\n    text-align: center;\r\n  }\r\n}\r\n\r\n.img-qui-sommes-nous {\r\n  height: 40rem;\r\n  width: 60rem;\r\n  background-image: url(/src/assets/images/2-qui_sommes_nous.jpg);\r\n  background-repeat: no-repeat;\r\n  background-size: contain;\r\n  margin: 2rem 5rem 2rem 0;\r\n  @include xs {\r\n    display: none;\r\n  }\r\n  @include sm {\r\n    display: none;\r\n  }\r\n}\r\n.title {\r\n  font-weight: 700;\r\n  font-size: 3rem;\r\n}\r\n\r\n// nos expertises\r\n\r\n.content-nos-expertise {\r\n  height: auto;\r\n  width: 100%;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  background: #f9f9f9;\r\n  padding: 5rem;\r\n  text-align: center;\r\n}\r\n.container-nos-expertise {\r\n  height: auto;\r\n  width: 100%;\r\n  display: flex;\r\n  flex-direction: row nowrap;\r\n  justify-content: center;\r\n  margin: 5rem;\r\n  @include xs {\r\n    flex-direction: column;\r\n    align-items: center;\r\n  }\r\n}\r\n.elem-nos-expertise {\r\n  height: auto;\r\n  min-height: 30rem;\r\n  min-width: none;\r\n  width: auto;\r\n  max-width: 20rem;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  justify-content: start;\r\n  text-align: center;\r\n  margin-top: 2rem;\r\n}\r\n.under-title-nos-expertise {\r\n  display: flex;\r\n  align-items: center;\r\n  height: 5.3rem;\r\n}\r\n.symbole-nos-expertise {\r\n  margin-bottom: 5rem;\r\n}\r\n.symbole-nos-expertise-1 {\r\n  height: 5rem;\r\n  width: 5rem;\r\n}\r\n.symbole-nos-expertise-2 {\r\n  height: 5rem;\r\n  width: 5rem;\r\n}\r\n.symbole-nos-expertise-3 {\r\n  height: 5rem;\r\n  width: 5rem;\r\n}\r\n.symbole-nos-expertise-4 {\r\n  height: 5rem;\r\n  width: 3rem;\r\n}\r\n.separator-nos-expertise {\r\n  height: 100%;\r\n  width: 1px;\r\n  border: 1px var(--blue) dashed;\r\n  margin: 0rem 5rem;\r\n  @include xs {\r\n    height: 1px;\r\n    width: 80%;\r\n  }\r\n}\r\n.text-nos-expertise {\r\n  font-size: 2.2rem;\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -1314,6 +1528,16 @@ module.exports = styleTagTransform;
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 module.exports = __webpack_require__.p + "3679818865d5594e8a1c.jpg";
+
+/***/ }),
+
+/***/ "./src/assets/images/2-qui_sommes_nous.jpg":
+/*!*************************************************!*\
+  !*** ./src/assets/images/2-qui_sommes_nous.jpg ***!
+  \*************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "00c1f5b183e07f552bcf.jpg";
 
 /***/ }),
 
