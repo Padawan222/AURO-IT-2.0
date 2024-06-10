@@ -223,6 +223,9 @@ main {
   top: 10rem;
   justify-content: space-between;
   width: 85%;
+  @include sm {
+    width: 90%;
+  }
 }
 .span-img-notre-equipe-3 {
   position: absolute;
@@ -272,7 +275,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: end;
   text-align: center;
 }
 .text-notre-equipe {
@@ -288,9 +291,15 @@ main {
   @include xs {
     margin: 1rem 2rem;
   }
+  @include sm {
+    margin: 1rem 2rem;
+  }
 }
 .info-post {
   font-weight: 700;
+  @include sm {
+    margin-bottom: 1rem;
+  }
 }
 .guillemet {
   font-size: 2rem;
