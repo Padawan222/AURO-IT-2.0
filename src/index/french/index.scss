@@ -243,6 +243,10 @@ main {
   position: relative;
   height: 42rem;
   width: 77.6rem;
+  @include sm {
+    height: 40rem;
+    width: 70rem;
+  }
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -307,10 +311,13 @@ main {
 .content-notre-equipe-xs {
   height: auto;
   width: 100%;
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  @include xs {
+    display: flex;
+  }
 }
 
 .container-text-notre-equipe-xs {
