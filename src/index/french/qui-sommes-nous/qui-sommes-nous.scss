@@ -140,6 +140,11 @@ main {
     padding: 0 5rem;
   }
 }
+.title-ce-qui-nous-caracterise {
+  @include xs {
+    margin: 0 2rem;
+  }
+}
 .elem-ce-qui-nous-caracterise-1 {
   width: 50rem;
   @include xs {
@@ -215,5 +220,10 @@ main {
   }
   @include sm {
     justify-content: center;
+  }
+}
+.symbole-nos-expertises {
+  @include xs {
+    margin-bottom: 2rem;
   }
 }
