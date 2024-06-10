@@ -195,6 +195,134 @@ main {
   width: auto;
 }
 
+// notre equipe
+
+.content-notre-equipe {
+  @include xs {
+    display: none;
+  }
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem;
+}
+
+.span-img-notre-equipe {
+  display: flex;
+}
+.span-img-notre-equipe-1 {
+  position: absolute;
+  top: -3rem;
+}
+
+.span-img-notre-equipe-2 {
+  position: absolute;
+  top: 10rem;
+  justify-content: space-between;
+  width: 85%;
+}
+.span-img-notre-equipe-3 {
+  position: absolute;
+  bottom: -1.2rem;
+  justify-content: space-between;
+  width: 110%;
+}
+.img-notre-equipe {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 30rem;
+}
+.img-notre-equipe-1 {
+  height: 12rem;
+  width: 12rem;
+}
+.demi-cercle-1 {
+  position: relative;
+  height: 42rem;
+  width: 77.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  border-radius: 40rem 40rem 0 0;
+  border-top: 2px dashed #ddd;
+  border-left: 2px dashed #ddd;
+  border-right: 2px dashed #ddd;
+}
+.demi-cercle-1::before {
+  content: "";
+  height: 90%;
+  width: 90%;
+  border-radius: 40rem 40rem 0 0;
+  border-top: 2px dashed #ddd;
+  border-left: 2px dashed #ddd;
+  border-right: 2px dashed #ddd;
+}
+.container-text-notre-equipe {
+  position: absolute;
+  height: 80%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.text-notre-equipe {
+  font-weight: 300;
+  font-style: italic;
+  @include xs {
+    margin: 2rem;
+  }
+}
+.under-title-notre-equipe {
+  font-size: 2.5rem;
+  font-weight: 700;
+  @include xs {
+    margin: 1rem 2rem;
+  }
+}
+.info-post {
+  font-weight: 700;
+}
+.guillemet {
+  font-size: 2rem;
+  background: linear-gradient(to right, #f9517b, #ffd990);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.title-notre-equipe {
+  margin-bottom: 8rem;
+  @include xs {
+    margin: 2rem;
+  }
+}
+
+// notre equipe xs
+
+.content-notre-equipe-xs {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-text-notre-equipe-xs {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
 // votre besoin
 
 .content-votre-besoin {
