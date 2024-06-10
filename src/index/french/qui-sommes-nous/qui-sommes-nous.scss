@@ -211,6 +211,7 @@ main {
   margin: 5rem 0;
   @include xs {
     justify-content: center;
+    flex-direction: column;
   }
   @include sm {
     justify-content: center;
