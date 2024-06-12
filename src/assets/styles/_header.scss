@@ -7,9 +7,11 @@ header {
   justify-content: space-around;
   @include xs {
     justify-content: space-between;
+    background: #000000;
   }
   @include sm {
     justify-content: space-between;
+    background: #000000;
   }
   height: auto;
   width: 100%;

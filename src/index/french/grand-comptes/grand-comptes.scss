@@ -95,6 +95,7 @@ main {
   height: 10rem;
   transition: height 1s ease;
   @include xs {
+    text-align: center;
     height: 12rem;
   }
 }
@@ -114,6 +115,9 @@ main {
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
+  @include xs {
+    text-align: center;
+  }
 }
 .under-title-widget {
   margin: 2rem;
