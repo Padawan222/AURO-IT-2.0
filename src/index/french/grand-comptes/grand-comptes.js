@@ -228,7 +228,11 @@ window.addEventListener("scroll", () => {
   }
 });
 
+// widget
+
 document.addEventListener("DOMContentLoaded", () => {
+  let openedWidget = null;
+
   document.querySelectorAll(".widget-grands-comptes").forEach((widget) => {
     const content = widget.querySelector(".content");
     const textOnOff = content.querySelectorAll(".text-on-off");
@@ -236,35 +240,52 @@ document.addEventListener("DOMContentLoaded", () => {
 
     widget.addEventListener("click", () => {
       if (widget.classList.contains("widget-grands-comptes-active-1")) {
-        widget.classList.remove("widget-grands-comptes-active-1");
-        btnOpenCloseWidget.classList.remove("btn-open-close-widget-active-1");
-
-        setTimeout(() => {
-          textOnOff.forEach((element) => {
-            element.style.display = "none";
-          });
-        }, 1000);
-
-        const originalHeight = "10rem";
-        widget.style.height = originalHeight;
+        closeWidget(widget, textOnOff, btnOpenCloseWidget);
+        openedWidget = null;
       } else {
-        console.log("hello");
-        widget.classList.add("widget-grands-comptes-active-1");
-        btnOpenCloseWidget.classList.add("btn-open-close-widget-active-1");
-
-        textOnOff.forEach((element) => {
-          element.style.display = "block";
-        });
-
-        const previousHeight = widget.style.height;
-        widget.style.height = "auto";
-        const fullHeight = widget.scrollHeight + "px";
-        widget.style.height = previousHeight;
-
-        widget.offsetHeight;
-
-        widget.style.height = fullHeight;
+        if (openedWidget) {
+          const prevContent = openedWidget.querySelector(".content");
+          const prevTextOnOff = prevContent.querySelectorAll(".text-on-off");
+          const prevBtnOpenCloseWidget = openedWidget.querySelector(
+            ".btn-open-close-widget"
+          );
+          closeWidget(openedWidget, prevTextOnOff, prevBtnOpenCloseWidget);
+        }
+        openWidget(widget, textOnOff, btnOpenCloseWidget);
+        openedWidget = widget;
       }
     });
+
+    function closeWidget(widget, textOnOff, btnOpenCloseWidget) {
+      widget.classList.remove("widget-grands-comptes-active-1");
+      btnOpenCloseWidget.classList.remove("btn-open-close-widget-active-1");
+
+      setTimeout(() => {
+        textOnOff.forEach((element) => {
+          element.style.display = "none";
+        });
+      }, 1000);
+
+      const originalHeight = "10rem";
+      widget.style.height = originalHeight;
+    }
+
+    function openWidget(widget, textOnOff, btnOpenCloseWidget) {
+      widget.classList.add("widget-grands-comptes-active-1");
+      btnOpenCloseWidget.classList.add("btn-open-close-widget-active-1");
+
+      textOnOff.forEach((element) => {
+        element.style.display = "block";
+      });
+
+      const previousHeight = widget.style.height;
+      widget.style.height = "auto";
+      const fullHeight = widget.scrollHeight + "px";
+      widget.style.height = previousHeight;
+
+      widget.offsetHeight;
+
+      widget.style.height = fullHeight;
+    }
   });
 });
