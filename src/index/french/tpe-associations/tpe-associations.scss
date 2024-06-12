@@ -116,6 +116,7 @@ main {
   align-items: center;
   cursor: pointer;
   @include xs {
+    margin-bottom: 2rem;
     text-align: center;
   }
 }

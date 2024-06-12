@@ -93,6 +93,7 @@ main {
   cursor: pointer;
   @include xs {
     text-align: center;
+    margin-bottom: 2rem;
   }
 }
 .under-title-widget {
