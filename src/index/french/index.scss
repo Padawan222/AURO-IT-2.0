@@ -181,6 +181,10 @@ main {
   @include xs {
     display: none;
   }
+  @include sm {
+    width: 100%;
+    justify-content: space-around;
+  }
 }
 .container-symbole-nos-valeurs {
   margin: 0 4rem;
@@ -216,6 +220,9 @@ main {
 .span-img-notre-equipe-1 {
   position: absolute;
   top: -3rem;
+  @include sm {
+    top: -4rem;
+  }
 }
 
 .span-img-notre-equipe-2 {
