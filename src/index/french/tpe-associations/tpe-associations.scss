@@ -80,6 +80,8 @@ main {
   transition: 1s all;
   @include xs {
     width: 90%;
+    padding: 2rem;
+    padding-top: 0;
   }
   @include sm {
     width: 90%;

@@ -80,6 +80,8 @@ main {
   transition: 1s all;
   @include xs {
     width: 90%;
+    padding: 2rem;
+    padding-top: 0;
   }
   @include sm {
     width: 90%;
@@ -121,6 +123,9 @@ main {
 }
 .under-title-widget {
   margin: 2rem;
+  @include xs {
+    margin: 1rem;
+  }
 }
 .btn-open-close-widget {
   font-size: 2.5rem;
