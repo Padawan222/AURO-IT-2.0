@@ -229,7 +229,6 @@ window.addEventListener("scroll", () => {
 });
 
 // widget
-
 document.addEventListener("DOMContentLoaded", () => {
   let openedWidget = null;
 
@@ -251,15 +250,14 @@ document.addEventListener("DOMContentLoaded", () => {
           );
           closeWidget(openedWidget, prevTextOnOff, prevBtnOpenCloseWidget);
         }
-        // Vérifier si un widget est déjà ouvert avant d'activer le setTimeout
-        if (openedWidget) {
+        openWidget(widget, textOnOff, btnOpenCloseWidget);
+        openedWidget = widget;
+        if (isLastWidget(widget)) {
           setTimeout(() => {
-            openWidget(widget, textOnOff, btnOpenCloseWidget);
-            openedWidget = widget;
+            if (!isElementInViewport(widget)) {
+              scrollIntoView(widget);
+            }
           }, 1000);
-        } else {
-          openWidget(widget, textOnOff, btnOpenCloseWidget);
-          openedWidget = widget;
         }
       }
     });
@@ -294,6 +292,27 @@ document.addEventListener("DOMContentLoaded", () => {
       widget.offsetHeight;
 
       widget.style.height = fullHeight;
+    }
+
+    function scrollIntoView(widget) {
+      widget.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+
+    function isLastWidget(widget) {
+      const widgets = document.querySelectorAll(".widget-grands-comptes");
+      return widget === widgets[widgets.length - 1];
+    }
+
+    function isElementInViewport(el) {
+      const rect = el.getBoundingClientRect();
+      return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <=
+          (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <=
+          (window.innerWidth || document.documentElement.clientWidth)
+      );
     }
   });
 });
