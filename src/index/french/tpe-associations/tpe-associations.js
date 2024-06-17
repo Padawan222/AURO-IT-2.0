@@ -251,8 +251,16 @@ document.addEventListener("DOMContentLoaded", () => {
           );
           closeWidget(openedWidget, prevTextOnOff, prevBtnOpenCloseWidget);
         }
-        openWidget(widget, textOnOff, btnOpenCloseWidget);
-        openedWidget = widget;
+        // Vérifier si un widget est déjà ouvert avant d'activer le setTimeout
+        if (openedWidget) {
+          setTimeout(() => {
+            openWidget(widget, textOnOff, btnOpenCloseWidget);
+            openedWidget = widget;
+          }, 1000);
+        } else {
+          openWidget(widget, textOnOff, btnOpenCloseWidget);
+          openedWidget = widget;
+        }
       }
     });
 

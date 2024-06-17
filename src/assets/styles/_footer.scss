@@ -43,7 +43,7 @@ footer {
 }
 .auro-info {
   color: white;
-  font-weight: 700;
+  font-weight: 300;
   margin: 0.5rem;
 }
 
@@ -62,7 +62,7 @@ footer {
 .link-footer-contact {
   color: white;
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 300;
 }
 
 // plan du site
@@ -75,7 +75,7 @@ footer {
 .link-footer-plan-du-site {
   color: white;
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 300;
   @include xs {
     margin: 1rem 0;
   }
@@ -125,7 +125,7 @@ footer {
 }
 .droit-auro {
   color: white;
-  font-weight: 700;
+  font-weight: 300;
   margin: 0 2.5rem;
   text-decoration: none;
   @include xs {
