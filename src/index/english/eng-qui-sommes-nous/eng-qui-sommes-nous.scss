@@ -1,0 +1,229 @@
+@use "/src/assets/styles/media-queries" as *;
+
+// header
+.header-container-qui-sommes-nous {
+  background: url(/src/assets/images/16-images_qui_sommes_nous.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.link-header-active {
+  opacity: 50%;
+}
+.underline-4-active {
+  opacity: 50%;
+}
+
+main {
+  grid-area: main;
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+// qui sommes nous
+
+.content-qui-sommes-nous {
+  height: auto;
+  min-height: 60rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  @include sm {
+    min-height: 40rem;
+  }
+}
+.container-qui-sommes-nous {
+  height: auto;
+  width: auto;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  margin: 2rem 5rem;
+  @include xs {
+    align-items: center;
+    text-align: center;
+    margin: 2rem;
+  }
+  @include sm {
+    align-items: center;
+    text-align: center;
+  }
+}
+.container-qui-sommes-nous-1 {
+  flex-direction: row nowrap;
+}
+.container-qui-sommes-nous-2 {
+  height: 100%;
+  width: 30%;
+  flex-direction: column;
+  @include xs {
+    width: 100%;
+  }
+  @include sm {
+    width: 100%;
+  }
+}
+
+.img-qui-sommes-nous {
+  height: 40rem;
+  width: 60rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 2rem 5rem 2rem 0;
+  @include xs {
+    display: none;
+  }
+  @include sm {
+    display: none;
+  }
+}
+.text-qui-sommes-nous {
+  width: 100%;
+  margin: 5rem 0;
+}
+
+// ce qui nous caracterise
+
+.content-ce-qui-nous-caracterise {
+  height: auto;
+  width: 56%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  @include xs {
+    align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+  @include sm {
+    align-items: center;
+    width: 100%;
+  }
+}
+.container-ce-qui-nous-caracterise {
+  height: 100;
+  width: 100%;
+  display: flex;
+  flex-direction: row nowrap;
+  justify-content: center;
+  @include xs {
+    flex-direction: column;
+  }
+  @include sm {
+    flex-direction: column;
+  }
+}
+.elem-ce-qui-nous-caracterise {
+  height: auto;
+  min-height: 80rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 5rem;
+  @include xs {
+    min-height: 60rem;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 0;
+    padding: 0 5rem;
+  }
+  @include sm {
+    min-height: 25rem;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 0;
+    padding: 0 5rem;
+  }
+}
+.title-ce-qui-nous-caracterise {
+  @include xs {
+    margin: 0 2rem;
+  }
+}
+.elem-ce-qui-nous-caracterise-1 {
+  width: 50rem;
+  @include xs {
+    width: 100%;
+  }
+  @include sm {
+    width: 100%;
+  }
+}
+.elem-ce-qui-nous-caracterise-2 {
+  width: 60rem;
+  @include xs {
+    width: 100%;
+  }
+  @include sm {
+    width: 100%;
+  }
+}
+.img-ce-qui-nous-caracterise-1 {
+  @include xs {
+    display: none;
+  }
+  @include sm {
+    display: none;
+  }
+}
+
+// nos expertise
+
+.content-nos-expertises {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem;
+  background: #eee;
+}
+.container-nos-expertises {
+  height: auto;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  background: #eee;
+  @include xs {
+    align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+  @include sm {
+    align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+}
+.span-elem-nos-expertises {
+  height: auto;
+  width: auto;
+
+  margin: 2rem 0;
+}
+.container-span-elem-nos-expertises {
+  display: flex;
+  flex-direction: row nowrap;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  margin: 5rem 0;
+  @include xs {
+    justify-content: center;
+    flex-direction: column;
+  }
+  @include sm {
+    justify-content: center;
+  }
+}
+.symbole-nos-expertises {
+  @include xs {
+    margin-bottom: 2rem;
+  }
+}

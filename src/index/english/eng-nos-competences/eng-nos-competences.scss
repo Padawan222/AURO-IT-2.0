@@ -1,0 +1,52 @@
+@use "/src/assets/styles/media-queries" as *;
+
+// header
+.header-container-qui-sommes-nous {
+  background: url(/src/assets/images/19-image_nos_competences.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.link-header-active {
+  opacity: 50%;
+}
+.underline-4-active {
+  opacity: 50%;
+}
+
+main {
+  grid-area: main;
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+//  nos competences
+
+.content-nos-competences {
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: #eee;
+}
+.container-nos-competences {
+  height: auto;
+  width: 60%;
+  padding: 5rem 2rem;
+  margin-bottom: 3rem;
+  @include xs {
+    text-align: center;
+    width: 100%;
+  }
+}
+.title-nos-competences {
+  margin-bottom: 5rem;
+}
+.under-title-nos-competences {
+  margin: 5rem 0 2rem 0;
+}
+.text-nos-competences {
+  margin: 0;
+}

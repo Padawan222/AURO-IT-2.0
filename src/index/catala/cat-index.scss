@@ -1,0 +1,505 @@
+@use "../../assets/styles/media-queries" as *;
+
+main {
+  grid-area: main;
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+// qui sommes nous
+
+.content-qui-sommes-nous {
+  height: auto;
+  min-height: 60rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row nowrap;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  @include sm {
+    min-height: 40rem;
+  }
+}
+.container-qui-sommes-nous {
+  width: auto;
+  max-width: 45rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  margin: 2rem 5rem;
+  @include xs {
+    align-items: center;
+    text-align: center;
+  }
+  @include sm {
+    max-width: 100rem;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.img-qui-sommes-nous {
+  height: 40rem;
+  width: 60rem;
+  background-image: url(/src/assets/images/2-qui_sommes_nous.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 2rem 5rem 2rem 0;
+  @include xs {
+    display: none;
+  }
+  @include sm {
+    display: none;
+  }
+}
+.text-qui-sommes-nous {
+  margin: 5rem 0;
+}
+// nos expertises
+
+.content-nos-expertise {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #eee;
+  padding: 5rem;
+  text-align: center;
+}
+.container-nos-expertise {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row nowrap;
+  justify-content: center;
+  margin: 5rem;
+  @include xs {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.elem-nos-expertise {
+  height: auto;
+  min-height: 30rem;
+  min-width: none;
+  width: auto;
+  max-width: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  text-align: center;
+  margin-top: 2rem;
+}
+.under-title-nos-expertise {
+  display: flex;
+  align-items: center;
+  height: 5.3rem;
+}
+.symbole-nos-expertise {
+  margin-bottom: 5rem;
+}
+.symbole-nos-expertise-1 {
+  height: 5rem;
+  width: 5rem;
+}
+.symbole-nos-expertise-2 {
+  height: 5rem;
+  width: 5rem;
+}
+.symbole-nos-expertise-3 {
+  height: 5rem;
+  width: 5rem;
+}
+.symbole-nos-expertise-4 {
+  height: 5rem;
+  width: 3rem;
+}
+.separator-nos-expertise {
+  height: 100%;
+  width: 1px;
+  border: 1px var(--blue) dashed;
+  margin: 0rem 5rem;
+  @include xs {
+    display: none;
+  }
+  @include sm {
+    margin: 0 2.5rem;
+  }
+}
+.text-nos-expertise {
+  font-size: 2.2rem;
+  margin: 5rem 0 0 0;
+}
+
+// nos valeurs
+.content-nos-valeurs {
+  position: relative;
+  height: 55rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(/src/assets/images/10-close-up-young-colleagues-having-meeting.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  @include xs {
+    height: auto;
+  }
+}
+
+.content-nos-valeurs::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.content-nos-valeurs > * {
+  position: relative;
+  z-index: 2;
+}
+
+.container-nos-valeurs {
+  width: 70%;
+  display: flex;
+  flex-direction: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  @include xs {
+    display: none;
+  }
+  @include sm {
+    width: 100%;
+    justify-content: space-around;
+  }
+}
+.container-symbole-nos-valeurs {
+  margin: 0 4rem;
+}
+
+.text-nos-valeurs {
+  color: white;
+  margin: 2rem 2rem 0 2rem;
+}
+.symbole-nos-valeurs {
+  height: 8rem;
+  width: auto;
+}
+
+// notre equipe
+
+.content-notre-equipe {
+  @include xs {
+    display: none;
+  }
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem;
+}
+
+.span-img-notre-equipe {
+  display: flex;
+}
+.span-img-notre-equipe-1 {
+  position: absolute;
+  top: -3rem;
+  @include sm {
+    top: -5rem;
+  }
+}
+
+.span-img-notre-equipe-2 {
+  position: absolute;
+  top: 10rem;
+  justify-content: space-between;
+  width: 85%;
+  @include sm {
+    width: 90%;
+  }
+}
+.span-img-notre-equipe-3 {
+  position: absolute;
+  bottom: -1.2rem;
+  justify-content: space-between;
+  width: 110%;
+}
+.img-notre-equipe {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 30rem;
+}
+.img-notre-equipe-1 {
+  height: 12rem;
+  width: 12rem;
+}
+.demi-cercle-1 {
+  position: relative;
+  height: 42rem;
+  width: 77.6rem;
+  @include sm {
+    height: 40rem;
+    width: 70rem;
+  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  border-radius: 40rem 40rem 0 0;
+  border-top: 2px dashed #ddd;
+  border-left: 2px dashed #ddd;
+  border-right: 2px dashed #ddd;
+}
+.demi-cercle-1::before {
+  content: "";
+  height: 90%;
+  width: 90%;
+  border-radius: 40rem 40rem 0 0;
+  border-top: 2px dashed #ddd;
+  border-left: 2px dashed #ddd;
+  border-right: 2px dashed #ddd;
+}
+.container-text-notre-equipe {
+  position: absolute;
+  height: 80%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  text-align: center;
+}
+.text-notre-equipe {
+  font-weight: 300;
+  font-style: italic;
+  @include xs {
+    margin: 2rem;
+  }
+}
+.under-title-notre-equipe {
+  font-size: 2.5rem;
+  font-weight: 700;
+  @include xs {
+    margin: 1rem 2rem;
+  }
+  @include sm {
+    margin: 1rem 2rem;
+  }
+}
+.info-post {
+  font-weight: 700;
+  @include sm {
+    margin-bottom: 2rem;
+  }
+}
+.guillemet {
+  font-size: 2rem;
+  background: linear-gradient(to right, #f9517b, #ffd990);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.title-notre-equipe {
+  margin-bottom: 8rem;
+  @include xs {
+    margin: 2rem;
+  }
+}
+
+// notre equipe xs
+
+.content-notre-equipe-xs {
+  height: auto;
+  width: 100%;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  @include xs {
+    display: flex;
+  }
+}
+
+.container-text-notre-equipe-xs {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+// votre besoin
+
+.content-votre-besoin {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #eee;
+  padding: 5rem;
+  @include xs {
+    padding: 2rem 0;
+  }
+  @include sm {
+    padding: 2rem 0;
+  }
+}
+.container-votre-besoin {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  margin: 5rem;
+  @include xs {
+    flex-direction: column;
+    margin: 2rem;
+  }
+  @include sm {
+    flex-direction: column;
+  }
+}
+
+.span-votre-besoin {
+  height: auto;
+  width: auto;
+  max-width: 40rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem;
+  text-align: center;
+  background: white;
+  border-radius: 2rem;
+}
+
+.img-votre-besoin {
+  height: 25rem;
+  width: 100%;
+  margin-bottom: 2rem;
+  border-radius: 2rem 2rem 0 0;
+}
+.separator-votre-besoin {
+  height: 2px;
+  width: 80%;
+  margin: 2rem;
+  background: #eee;
+}
+.btn-votre-besoin {
+  margin: 5rem 0;
+}
+.text-votre-besoin {
+  font-weight: 300;
+}
+
+// notre reseau
+
+.content-notre-reseau {
+  height: 54rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  background: url(/src/assets/images/14-map.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  @include xs {
+    background: none;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+  }
+  @include sm {
+    background: none;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.container-notre-reseau {
+  height: 70%;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+
+  margin: 2rem;
+  @include xs {
+    height: auto;
+    width: 100%;
+    align-items: center;
+  }
+  @include sm {
+    height: auto;
+    width: 100%;
+    align-items: center;
+  }
+}
+
+.span-notre-reseau {
+  width: auto;
+  max-width: 40rem;
+  @include xs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+  @include sm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.text-notre-reseau {
+  margin: 2rem 0;
+  @include xs {
+    margin: 2rem;
+  }
+  @include sm {
+    margin: 2rem;
+  }
+}
+.text-notre-reseau-m {
+  font-weight: 300;
+}
+.img-xs {
+  display: none;
+  @include xs {
+    display: flex;
+  }
+  @include sm {
+    display: flex;
+  }
+  height: 30rem;
+  width: 100%;
+  background: url(/src/assets/images/15-map-2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 2rem;
+}

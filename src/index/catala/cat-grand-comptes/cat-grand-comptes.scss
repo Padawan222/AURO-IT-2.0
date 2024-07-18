@@ -1,0 +1,137 @@
+@use "/src/assets/styles/media-queries" as *;
+
+// header
+.header-container-qui-sommes-nous {
+  background: url(/src/assets/images/20-image_vos_besoins.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.vos-besoins-active {
+  opacity: 50%;
+}
+.underline-0-active {
+  opacity: 50%;
+}
+
+.title-vos-besoins {
+  font-size: 3rem;
+  font-weight: 300;
+  color: white;
+}
+main {
+  grid-area: main;
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 1s;
+}
+
+// grands comptes
+
+.grands-comptes-content {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #eee;
+  align-items: center;
+  transition: 1s;
+}
+
+.grands-comptes-container-1 {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  padding: 2rem;
+  @include xs {
+    width: 90%;
+    text-align: center;
+  }
+  @include sm {
+    width: 90%;
+  }
+}
+.title-grands-comptes-1 {
+  margin: 3rem 2rem;
+}
+.title-grands-comptes-2 {
+  font-size: 2.5rem;
+  margin: 3rem 2rem;
+}
+.under-title-grands-comptes {
+  margin: 3rem 0 2rem 2rem;
+}
+
+// widget
+
+.grands-comptes-container-3 {
+  height: auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  padding: 0 5rem 5rem 5rem;
+  margin-bottom: 5rem;
+  border-radius: 3rem;
+  transition: 1s all;
+  @include xs {
+    width: 90%;
+    padding: 2rem;
+    padding-top: 0;
+  }
+  @include sm {
+    width: 90%;
+  }
+}
+
+.widget-grands-comptes {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-bottom: 3px solid #eee;
+  height: 10rem;
+  transition: height 1s ease;
+  @include xs {
+    text-align: center;
+    height: 12rem;
+  }
+}
+
+.widget-grands-comptes .content {
+  padding: 1rem;
+}
+
+.text-on-off {
+  display: none;
+}
+
+.title-widget {
+  height: 10rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  @include xs {
+    text-align: center;
+  }
+}
+.under-title-widget {
+  margin: 2rem;
+  @include xs {
+    margin: 1rem;
+  }
+}
+.btn-open-close-widget {
+  font-size: 2.5rem;
+  font-weight: 300;
+  transition: 1s;
+}
+.btn-open-close-widget-active-1 {
+  rotate: 45deg;
+}
