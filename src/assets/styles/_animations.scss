@@ -1,0 +1,55 @@
+.anim-logo {
+  animation: 2s anim-logo;
+  @keyframes anim-logo {
+    0% {
+      transform: translateY(100%);
+    }
+  }
+}
+.anim-nav {
+  animation: 2s anim-nav;
+  @keyframes anim-nav {
+    0% {
+      transform: translateY(-100%);
+    }
+  }
+}
+.anim-start-1 {
+  animation: 4s anim-start-1;
+  @keyframes anim-start-1 {
+    0% {
+      opacity: 0;
+      transform: scaleY(0);
+    }
+    50% {
+      transform: scaleY(0);
+    }
+  }
+}
+.anim-start-2 {
+  animation: 3s anim-start-2;
+  @keyframes anim-start-2 {
+    0% {
+      opacity: 0;
+    }
+    66% {
+      opacity: 0;
+    }
+  }
+}
+.anim-start-3 {
+  animation: 3s anim-start-3;
+  @keyframes anim-start-3 {
+    0% {
+      transform: translatex(-100%);
+    }
+  }
+}
+.anim-start-4 {
+  animation: 3s anim-start-4;
+  @keyframes anim-start-4 {
+    0% {
+      transform: translateX(100%);
+    }
+  }
+}
